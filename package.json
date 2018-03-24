@@ -1,0 +1,47 @@
+{
+  "name": "lighthouse-lambda",
+  "version": "0.1.0",
+  "description": "Run Google Chrome Lighthouse on AWS Lambda",
+  "engines": {
+    "node": "6.10.x"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "pretest": "standard",
+    "build:deps": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs6.10 rm -rf node_modules && npm install",
+    "build": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs6.10 rm -f *.zip && zip lighthouse-lambda.zip -r lib node_modules bin test.js package.json",
+    "test": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:nodejs6.10 test.handler",
+    "postinstall": "node lib/postinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webokteam/lighthouse-lambda.git"
+  },
+  "keywords": [
+    "chrome",
+    "lighthouse",
+    "aws",
+    "lambda",
+    "headless",
+    "serverless",
+    "devtools"
+  ],
+  "author": "WebOK <team@webok.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webokteam/lighthouse-lambda/issues"
+  },
+  "homepage": "https://github.com/webokteam/lighthouse-lambda#readme",
+  "dependencies": {
+    "download": "^6.2.5",
+    "lighthouse": "^2.9.4",
+    "progress": "^2.0.0"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
