@@ -12,8 +12,8 @@
   "scripts": {
     "lint": "standard --fix",
     "pretest": "standard",
-    "build:deps": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs6.10 rm -rf node_modules && npm install",
-    "build": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs6.10 rm -f *.zip && zip lighthouse-lambda.zip -r lib node_modules bin test.js package.json",
+    "build:deps": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs6.10 bash -c \"rm -rf node_modules && npm install\"",
+    "build": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs6.10 bash -c \"rm -f *.zip && zip lighthouse-lambda.zip -r lib node_modules bin test.js package.json\"",
     "test": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:nodejs6.10 test.handler",
     "postinstall": "node lib/postinstall"
   },
