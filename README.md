@@ -43,9 +43,9 @@ $ docker run --rm -v "$PWD":/var/task lambci/lambda:nodejs6.10 index.handler
 You can use [docker-lambda](https://github.com/lambci/docker-lambda) to install dependencies and pack your Lambda function.
 
 ```
-$ docker run --rm -v "$PWD":/var/task lambci/lambda:build-nodejs6.10 rm -rf node_modules && npm install
+$ docker run --rm -v "$PWD":/var/task lambci/lambda:build-nodejs6.10 bash -c "rm -rf node_modules && npm install"
 
-$ docker run --rm -v "$PWD":/var/task lambci/lambda:build-nodejs6.10 rm -f *.zip && zip lambda.zip -r node_modules index.js package.json
+$ docker run --rm -v "$PWD":/var/task lambci/lambda:build-nodejs6.10 bash -c "rm -f *.zip && zip lambda.zip -r node_modules index.js package.json"
 ```
 
 - The file will be big (at least 75MB), so you need to upload it to S3 before deploying to Lambda from S3.
