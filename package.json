@@ -1,9 +1,9 @@
 {
   "name": "lighthouse-lambda",
-  "version": "0.3.0",
-  "description": "Run Google Chrome Lighthouse on AWS Lambda",
+  "version": "1.0.0",
+  "description": "Run Google Chrome Lighthouse on AWS Lambda.",
   "engines": {
-    "node": "6.10.x"
+    "node": "8.10.x"
   },
   "main": "lib/index.js",
   "files": [
@@ -12,14 +12,14 @@
   "scripts": {
     "lint": "standard --fix",
     "pretest": "standard",
-    "build:deps": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs6.10 bash -c \"rm -rf node_modules && npm install\"",
-    "build": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs6.10 bash -c \"rm -f *.zip && zip lighthouse-lambda.zip -r lib node_modules bin test.js package.json\"",
-    "test": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:nodejs6.10 test.handler",
+    "build:deps": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs8.10 bash -c \"rm -rf node_modules && npm install\"",
+    "build": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs8.10 bash -c \"rm -f *.zip && zip lighthouse-lambda.zip -r lib node_modules bin test.js package.json\"",
+    "test": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:nodejs8.10 test.handler",
     "postinstall": "node lib/postinstall"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webokteam/lighthouse-lambda.git"
+    "url": "git+https://github.com/joytocode/lighthouse-lambda.git"
   },
   "keywords": [
     "chrome",
@@ -30,12 +30,12 @@
     "serverless",
     "devtools"
   ],
-  "author": "WebOK <team@webok.io>",
+  "author": "JoyToCode <team@joytocode.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/webokteam/lighthouse-lambda/issues"
+    "url": "https://github.com/joytocode/lighthouse-lambda/issues"
   },
-  "homepage": "https://github.com/webokteam/lighthouse-lambda#readme",
+  "homepage": "https://github.com/joytocode/lighthouse-lambda#readme",
   "dependencies": {
     "download": "^6.2.5",
     "lighthouse": "^2.9.4",
