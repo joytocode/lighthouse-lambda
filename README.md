@@ -1,13 +1,13 @@
-# lighthouse-lambda
-> Run [Google Chrome Lighthouse](https://github.com/GoogleChrome/lighthouse) on [AWS Lambda](https://aws.amazon.com/lambda/)
+# joytocode/lighthouse-lambda
+Run [Google Chrome Lighthouse](https://github.com/GoogleChrome/lighthouse) on [AWS Lambda](https://aws.amazon.com/lambda/).
 
 ## Installation
 
-```
+```bash
 $ npm install lighthouse-lambda --save
 ```
 
-The postinstall script of `lighthouse-lambda` will download a headless chrome binary if it does not already exist. The binary is from [serverless-chrome](https://github.com/adieuadieu/serverless-chrome) and is tested to make sure it works with Lighthouse.
+The postinstall script of `lighthouse-lambda` will download a Headless Chrome binary if it does not already exist. The binary is from [joytocode/headless-chrome-builder](https://github.com/joytocode/headless-chrome-builder) and is tested to make sure it works with Lighthouse.
 
 ## Lambda function
 
@@ -34,21 +34,21 @@ exports.handler = function (event, context, callback) {
 
 You can use [docker-lambda](https://github.com/lambci/docker-lambda) to test your Lambda function locally.
 
-```
-$ docker run --rm -v "$PWD":/var/task lambci/lambda:nodejs6.10 index.handler
+```bash
+$ docker run --rm -v "$PWD":/var/task lambci/lambda:nodejs8.10 index.handler
 ```
 
 ## Deployment
 
 You can use [docker-lambda](https://github.com/lambci/docker-lambda) to install dependencies and pack your Lambda function.
 
-```
-$ docker run --rm -v "$PWD":/var/task lambci/lambda:build-nodejs6.10 bash -c "rm -rf node_modules && npm install"
+```bash
+$ docker run --rm -v "$PWD":/var/task lambci/lambda:build-nodejs8.10 bash -c "rm -rf node_modules && npm install"
 
-$ docker run --rm -v "$PWD":/var/task lambci/lambda:build-nodejs6.10 bash -c "rm -f *.zip && zip lambda.zip -r node_modules index.js package.json"
+$ docker run --rm -v "$PWD":/var/task lambci/lambda:build-nodejs8.10 bash -c "rm -f *.zip && zip lambda.zip -r node_modules index.js package.json"
 ```
 
-- The file will be big (at least 75MB), so you need to upload it to S3 before deploying to Lambda from S3.
+- The file will be big (at least 80MB), so you need to upload it to S3 then deploy to Lambda from S3.
 - You should allocate at least 512 MB memory and 15 seconds timeout to the function.
 
 ## API
