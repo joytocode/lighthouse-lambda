@@ -19,10 +19,12 @@ const createLighthouse = require('lighthouse-lambda')
 exports.handler = function (event, context, callback) {
   Promise.resolve()
     .then(() => createLighthouse('https://example.com', { logLevel: 'info' }))
-    .then(({ chrome, start }) => {
+    .then(({ chrome, start, createReport }) => {
       return start()
         .then((results) => {
           // Do something with `results`
+          const html = createReport(results)
+          // Do something with the html report
           return chrome.kill().then(() => callback(null))
         })
     })
@@ -61,7 +63,8 @@ Returns a `Promise` of an Object with the following fields:
 
 - `chrome`: an instance of [`chromeLauncher.launch()`](https://github.com/GoogleChrome/chrome-launcher#launchopts).
 - `log`: an instance of [lighthouse-logger](https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-logger) (only if you set `options.logLevel`).
-- `start`: a function to start the scan which returns a `Promise` of Lighthouse results.
+- `start()`: a function to start the scan which returns a `Promise` of Lighthouse results.
+- `createReport(results)`: a function to create html report from Lighthouse results.
 
 ## License
 
