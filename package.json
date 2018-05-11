@@ -1,6 +1,6 @@
 {
   "name": "lighthouse-lambda",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Run Google Chrome Lighthouse on AWS Lambda.",
   "engines": {
     "node": "8.10.x"
