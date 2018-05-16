@@ -13,7 +13,7 @@ exports.handler = function (event, context, callback) {
             score: results.score,
             timing: results.timing
           })
-          return chrome.kill().then(() => callback(null))
+          return chrome.kill().then(() => callback(results.userAgent))
         })
     })
     .catch(callback)
