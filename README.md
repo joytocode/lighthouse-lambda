@@ -63,7 +63,8 @@ Returns a `Promise` of an Object with the following fields:
 
 - `chrome`: an instance of [`chromeLauncher.launch()`](https://github.com/GoogleChrome/chrome-launcher#launchopts).
 - `log`: an instance of [lighthouse-logger](https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-logger) (only if you set `options.logLevel`).
-- `start()`: a function to start the scan which returns a `Promise` of Lighthouse results.
+- `start(options)`: a function to start the scan which returns a `Promise` of Lighthouse results.
+  - `options.saveArtifacts`: a flag to indicate whether result artifacts should be saved (default: `false`).
 - `createReport(results)`: a function to create html report from Lighthouse results.
 
 ## License
