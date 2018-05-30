@@ -1,4 +1,7 @@
+const path = require('path')
+const fs = require('fs')
 const createLighthouse = require('.')
+const { version } = require('./package.json')
 
 exports.handler = function (event, context, callback) {
   Promise.resolve()
@@ -6,13 +9,10 @@ exports.handler = function (event, context, callback) {
     .then(({ chrome, start, createReport }) => {
       return start()
         .then((results) => {
-          console.log(createReport(results))
-          console.log({
-            userAgent: results.userAgent,
-            lighthouseVersion: results.lighthouseVersion,
-            score: results.score,
-            timing: results.timing
-          })
+          if (event.saveResults) {
+            fs.writeFileSync(path.join(__dirname, `results/${version}.json`), `${JSON.stringify(results, null, 2)}\n`)
+            fs.writeFileSync(path.join(__dirname, `results/${version}.html`), createReport(results))
+          }
           return chrome.kill().then(() => callback(null, results.userAgent))
         })
     })

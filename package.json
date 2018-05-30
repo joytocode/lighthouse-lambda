@@ -14,7 +14,8 @@
     "pretest": "standard",
     "build:deps": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs8.10 bash -c \"rm -rf node_modules && npm install\"",
     "build": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs8.10 bash -c \"rm -f *.zip && zip lighthouse-lambda.zip -r lib node_modules bin test.js package.json\"",
-    "test": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:nodejs8.10 test.handler",
+    "test": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:nodejs8.10 test.handler '{}'",
+    "test:results": "docker run --rm -v \"$PWD\":/var/task --user root lambci/lambda:nodejs8.10 test.handler '{\"saveResults\":true}'",
     "postinstall": "node lib/postinstall"
   },
   "repository": {
