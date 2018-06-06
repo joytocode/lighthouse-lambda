@@ -14,6 +14,8 @@ exports.handler = function (event, context, callback) {
             fs.writeFileSync(path.join(__dirname, `results/${version}.html`), createReport(results))
           }
           return chrome.kill().then(() => callback(null, results.userAgent))
+        }).catch((error) => {
+          return chrome.kill().then(() => callback(error))
         })
     })
     .catch(callback)

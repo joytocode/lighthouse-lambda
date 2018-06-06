@@ -26,9 +26,15 @@ exports.handler = function (event, context, callback) {
           const html = createReport(results)
           // Do something with the html report
           return chrome.kill().then(() => callback(null))
+        }).catch((error) => {
+          // Handle errors when running lighthouse
+          return chrome.kill().then(() => callback(error))
         })
     })
-    .catch(callback)
+    .catch((error) => {
+      // Handle other errors
+      callback(error)
+    })
 }
 ```
 
