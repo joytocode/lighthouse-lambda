@@ -28,7 +28,7 @@ exports.handler = function (event, context, callback) {
           return chrome.kill().then(() => callback(null))
         })
         .catch((error) => {
-          // Handle errors when running lighthouse
+          // Handle errors when running Lighthouse
           return chrome.kill().then(() => callback(error))
         })
     })
