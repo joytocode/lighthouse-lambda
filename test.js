@@ -15,6 +15,9 @@ exports.handler = function (event, context, callback) {
           }
           return chrome.kill().then(() => callback(null, results.userAgent))
         })
+        .catch((error) => {
+          return chrome.kill().then(() => callback(error))
+        })
     })
     .catch(callback)
 }
