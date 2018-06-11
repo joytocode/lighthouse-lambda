@@ -39,7 +39,7 @@
   "homepage": "https://github.com/joytocode/lighthouse-lambda#readme",
   "dependencies": {
     "download": "^7.0.0",
-    "lighthouse": "^2.9.4",
+    "lighthouse": "^3.0.0-beta.0",
     "ncp": "^2.0.0",
     "progress": "^2.0.0"
   },

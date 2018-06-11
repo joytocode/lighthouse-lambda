@@ -6,14 +6,18 @@ const { version } = require('./package.json')
 exports.handler = function (event, context, callback) {
   Promise.resolve()
     .then(() => createLighthouse('https://example.com', { logLevel: 'info' }))
-    .then(({ chrome, start, createReport }) => {
+    .then(({ chrome, start }) => {
       return start()
         .then((results) => {
           if (event.saveResults) {
-            fs.writeFileSync(path.join(__dirname, `results/${version}.json`), `${JSON.stringify(results, null, 2)}\n`)
-            fs.writeFileSync(path.join(__dirname, `results/${version}.html`), createReport(results))
+            const filename = version.split('-')[0]
+            fs.writeFileSync(path.join(__dirname, `results/${filename}.json`), `${JSON.stringify(results.lhr, null, 2)}\n`)
+            fs.writeFileSync(path.join(__dirname, `results/${filename}.html`), results.report)
           }
-          return chrome.kill().then(() => callback(null, results.userAgent))
+          return chrome.kill().then(() => callback(null, {
+            userAgent: results.lhr.userAgent,
+            lighthouseVersion: results.lhr.lighthouseVersion
+          }))
         })
         .catch((error) => {
           return chrome.kill().then(() => callback(error))
