@@ -1,6 +1,11 @@
 # joytocode/lighthouse-lambda
 Run [Google Chrome Lighthouse](https://github.com/GoogleChrome/lighthouse) on [AWS Lambda](https://aws.amazon.com/lambda/).
 
+## Versions
+Since 2.x, lighthouse-lambda has the same major version of lighthouse. For example, lighthouse-lambda 2.x will use lighthouse 2.x.
+
+This README is for version 2.x. To see version 3.x, visit https://github.com/joytocode/lighthouse-lambda/tree/v3.
+
 ## Installation
 
 ```bash
