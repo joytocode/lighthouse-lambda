@@ -9,7 +9,7 @@ This README is for version 3.x. To see version 2.x, visit https://github.com/joy
 ## Installation
 
 ```bash
-$ npm install lighthouse-lambda --save
+$ npm install lighthouse-lambda@3.0.0-rc.1 --save
 ```
 
 The postinstall script of `lighthouse-lambda` will download a Headless Chrome binary if it does not already exist. The binary is from [joytocode/headless-chrome-builder](https://github.com/joytocode/headless-chrome-builder) and is tested to make sure it works with Lighthouse.
@@ -24,12 +24,10 @@ const createLighthouse = require('lighthouse-lambda')
 exports.handler = function (event, context, callback) {
   Promise.resolve()
     .then(() => createLighthouse('https://example.com', { logLevel: 'info' }))
-    .then(({ chrome, start, createReport }) => {
+    .then(({ chrome, start }) => {
       return start()
         .then((results) => {
           // Do something with `results`
-          const html = createReport(results)
-          // Do something with the html report
           return chrome.kill().then(() => callback(null))
         })
         .catch((error) => {
@@ -73,9 +71,7 @@ Returns a `Promise` of an Object with the following fields:
 
 - `chrome`: an instance of [`chromeLauncher.launch()`](https://github.com/GoogleChrome/chrome-launcher#launchopts).
 - `log`: an instance of [lighthouse-logger](https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-logger) (only if you set `options.logLevel`).
-- `start(options)`: a function to start the scan which returns a `Promise` of Lighthouse results.
-  - `options.saveArtifacts`: a flag to indicate whether result artifacts should be saved (default: `false`).
-- `createReport(results)`: a function to create html report from Lighthouse results.
+- `start()`: a function to start the scan which returns a `Promise` of Lighthouse results.
 
 ## License
 
