@@ -9,7 +9,7 @@ This README is for version 3.x. To see version 2.x, visit https://github.com/joy
 ## Installation
 
 ```bash
-$ npm install lighthouse-lambda@3.0.0-rc.1 --save
+$ npm install lighthouse-lambda@next --save
 ```
 
 The postinstall script of `lighthouse-lambda` will download a Headless Chrome binary if it does not already exist. The binary is from [joytocode/headless-chrome-builder](https://github.com/joytocode/headless-chrome-builder) and is tested to make sure it works with Lighthouse.
