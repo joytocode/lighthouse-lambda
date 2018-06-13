@@ -1,7 +1,6 @@
 const path = require('path')
 const fs = require('fs')
 const createLighthouse = require('.')
-const { version } = require('./package.json')
 
 exports.handler = function (event, context, callback) {
   Promise.resolve()
@@ -10,7 +9,7 @@ exports.handler = function (event, context, callback) {
       return start()
         .then((results) => {
           if (event.saveResults) {
-            const filename = results.lhr.lighthouseVersion
+            const filename = results.lhr.lighthouseVersion.split('-')[0]
             fs.writeFileSync(path.join(__dirname, `results/${filename}.json`), `${JSON.stringify(results.lhr, null, 2)}\n`)
             fs.writeFileSync(path.join(__dirname, `results/${filename}.html`), results.report)
           }
