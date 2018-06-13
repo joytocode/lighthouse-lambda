@@ -10,14 +10,13 @@ exports.handler = function (event, context, callback) {
       return start()
         .then((results) => {
           if (event.saveResults) {
-            const filename = version.split('-')[0]
+            const filename = results.lhr.lighthouseVersion
             fs.writeFileSync(path.join(__dirname, `results/${filename}.json`), `${JSON.stringify(results.lhr, null, 2)}\n`)
             fs.writeFileSync(path.join(__dirname, `results/${filename}.html`), results.report)
           }
           return chrome.kill().then(() => callback(null, {
             userAgent: results.lhr.userAgent,
-            lighthouseVersion: results.lhr.lighthouseVersion,
-            lighthouseLambdaVersion: version
+            lighthouseVersion: results.lhr.lighthouseVersion
           }))
         })
         .catch((error) => {
