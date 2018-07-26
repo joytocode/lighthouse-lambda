@@ -2,14 +2,14 @@
 Run [Google Chrome Lighthouse](https://github.com/GoogleChrome/lighthouse) on [AWS Lambda](https://aws.amazon.com/lambda/).
 
 ## Versions
-Since 2.x, `lighthouse-lambda` has the same major version of [lighthouse](https://www.npmjs.com/package/lighthouse). For example, `lighthouse-lambda` 2.x will use `lighthouse` 2.x.
+Since version 2.x, `lighthouse-lambda` has the same major version of [lighthouse](https://www.npmjs.com/package/lighthouse). For example, `lighthouse-lambda` 2.x will use `lighthouse` 2.x.
 
-This README is for version 2.x. To see version 3.x, visit https://github.com/joytocode/lighthouse-lambda/tree/v3.
+This README is for version 2.x. To see latest version, visit https://github.com/joytocode/lighthouse-lambda.
 
 ## Installation
 
 ```bash
-$ npm install lighthouse-lambda --save
+$ npm install lighthouse-lambda@archived-v2 --save
 ```
 
 The postinstall script of `lighthouse-lambda` will download a Headless Chrome binary if it does not already exist. The binary is from [joytocode/headless-chrome-builder](https://github.com/joytocode/headless-chrome-builder) and is tested to make sure it works with Lighthouse.
