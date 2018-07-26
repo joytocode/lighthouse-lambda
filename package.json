@@ -1,6 +1,6 @@
 {
   "name": "lighthouse-lambda",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "description": "Run Google Chrome Lighthouse on AWS Lambda.",
   "engines": {
     "node": "8.10.x"
@@ -39,7 +39,7 @@
   "homepage": "https://github.com/joytocode/lighthouse-lambda#readme",
   "dependencies": {
     "download": "^7.1.0",
-    "lighthouse": "^2.9.4",
+    "lighthouse": "^3.0.3",
     "ncp": "^2.0.0",
     "progress": "^2.0.0"
   },

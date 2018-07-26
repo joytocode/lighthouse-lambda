@@ -2,9 +2,11 @@
 Run [Google Chrome Lighthouse](https://github.com/GoogleChrome/lighthouse) on [AWS Lambda](https://aws.amazon.com/lambda/).
 
 ## Versions
-Since 2.x, `lighthouse-lambda` has the same major version of [lighthouse](https://www.npmjs.com/package/lighthouse). For example, `lighthouse-lambda` 2.x will use `lighthouse` 2.x.
+Since version 2.x, `lighthouse-lambda` has the same major version of [lighthouse](https://www.npmjs.com/package/lighthouse). For example, `lighthouse-lambda` 3.x will use `lighthouse` 3.x.
 
-This README is for version 2.x. To see version 3.x, visit https://github.com/joytocode/lighthouse-lambda/tree/v3.
+This README is for version 3.x. To see older versions, visit:
+
+- 2.x: https://github.com/joytocode/lighthouse-lambda/tree/archived-v2
 
 ## Installation
 
@@ -24,12 +26,10 @@ const createLighthouse = require('lighthouse-lambda')
 exports.handler = function (event, context, callback) {
   Promise.resolve()
     .then(() => createLighthouse('https://example.com', { logLevel: 'info' }))
-    .then(({ chrome, start, createReport }) => {
+    .then(({ chrome, start }) => {
       return start()
         .then((results) => {
           // Do something with `results`
-          const html = createReport(results)
-          // Do something with the html report
           return chrome.kill().then(() => callback(null))
         })
         .catch((error) => {
@@ -73,9 +73,7 @@ Returns a `Promise` of an Object with the following fields:
 
 - `chrome`: an instance of [`chromeLauncher.launch()`](https://github.com/GoogleChrome/chrome-launcher#launchopts).
 - `log`: an instance of [lighthouse-logger](https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-logger) (only if you set `options.logLevel`).
-- `start(options)`: a function to start the scan which returns a `Promise` of Lighthouse results.
-  - `options.saveArtifacts`: a flag to indicate whether result artifacts should be saved (default: `false`).
-- `createReport(results)`: a function to create html report from Lighthouse results.
+- `start()`: a function to start the scan which returns a `Promise` of Lighthouse results.
 
 ## License
 
