@@ -1,7 +1,9 @@
 # joytocode/lighthouse-lambda
+
 Run [Google Chrome Lighthouse](https://github.com/GoogleChrome/lighthouse) on [AWS Lambda](https://aws.amazon.com/lambda/).
 
 ## Versions
+
 Since version 2.x, `lighthouse-lambda` has the same major version of [lighthouse](https://www.npmjs.com/package/lighthouse). For example, `lighthouse-lambda` 3.x will use `lighthouse` 3.x.
 
 This README is for version 3.x. To see older versions, visit:
@@ -13,8 +15,6 @@ This README is for version 3.x. To see older versions, visit:
 ```bash
 $ npm install lighthouse-lambda --save
 ```
-
-The postinstall script of `lighthouse-lambda` will download a Headless Chrome binary if it does not already exist. The binary is from [joytocode/headless-chrome-builder](https://github.com/joytocode/headless-chrome-builder) and is tested to make sure it works with Lighthouse.
 
 ## Lambda function
 
@@ -60,7 +60,7 @@ $ docker run --rm -v "$PWD":/var/task lambci/lambda:build-nodejs8.10 bash -c "rm
 $ docker run --rm -v "$PWD":/var/task lambci/lambda:build-nodejs8.10 bash -c "rm -f *.zip && zip lambda.zip -r node_modules index.js package.json"
 ```
 
-- The file will be big (at least 80MB), so you need to upload it to S3 then deploy to Lambda from S3.
+- The file will be big (at least 75MB), so you need to upload it to S3 then deploy to Lambda from S3.
 - You should allocate at least 512 MB memory and 15 seconds timeout to the function.
 
 ## API
@@ -71,9 +71,13 @@ Same parameters as [Using Lighthouse programmatically](https://github.com/Google
 
 Returns a `Promise` of an Object with the following fields:
 
-- `chrome`: an instance of [`chromeLauncher.launch()`](https://github.com/GoogleChrome/chrome-launcher#launchopts).
+- `chrome`: an instance of [`chromeLauncher.launch()`](https://github.com/GoogleChrome/chrome-launcher#launchopts), remember to call `chrome.kill()` in the end.
 - `log`: an instance of [lighthouse-logger](https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-logger) (only if you set `options.logLevel`).
 - `start()`: a function to start the scan which returns a `Promise` of Lighthouse results.
+
+## Credits
+
+`lighthouse-lambda` uses the Headless Chrome binary (stable version) from [@serverless-chrome/lambda](https://www.npmjs.com/package/@serverless-chrome/lambda).
 
 ## License
 
