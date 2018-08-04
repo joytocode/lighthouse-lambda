@@ -14,6 +14,8 @@ exports.handler = function (event, context, callback) {
             fs.writeFileSync(path.join(__dirname, `results/${filename}.html`), results.report)
           }
           return chrome.kill().then(() => callback(null, {
+            url: results.lhr.requestedUrl,
+            timing: results.lhr.timing,
             userAgent: results.lhr.userAgent,
             lighthouseVersion: results.lhr.lighthouseVersion
           }))
