@@ -4,7 +4,7 @@ const createLighthouse = require('.')
 
 exports.handler = function (event, context, callback) {
   Promise.resolve()
-    .then(() => createLighthouse('https://example.com', { logLevel: 'info' }))
+    .then(() => createLighthouse(event.url || 'https://example.com', { logLevel: 'info' }))
     .then(({ chrome, start, createReport }) => {
       return start()
         .then((results) => {
@@ -14,6 +14,8 @@ exports.handler = function (event, context, callback) {
             fs.writeFileSync(path.join(__dirname, `results/${filename}.html`), createReport(results))
           }
           return chrome.kill().then(() => callback(null, {
+            url: results.initialUrl,
+            timing: results.timing,
             userAgent: results.userAgent,
             lighthouseVersion: results.lighthouseVersion
           }))
