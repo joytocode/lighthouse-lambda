@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/AlanSwenson/lighthouse-lambda#readme",
   "dependencies": {
-    "@serverless-chrome/lambda": "^1.0.0-54",
+    "chrome-aws-lambda": "^2.1.1",
     "lighthouse": "^3.0.3"
   },
   "devDependencies": {
