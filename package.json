@@ -3,7 +3,7 @@
   "version": "3.1.1",
   "description": "Run Google Chrome Lighthouse on AWS Lambda.",
   "engines": {
-    "node": "8.10.x"
+    "node": "10.x"
   },
   "main": "lib/index.js",
   "files": [
@@ -12,10 +12,10 @@
   "scripts": {
     "lint": "standard --fix",
     "pretest": "standard",
-    "build:install": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs8.10 bash -c \"rm -rf node_modules && npm install\"",
-    "build": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs8.10 bash -c \"rm -f *.zip && zip lighthouse-lambda.zip -r lib node_modules bin test.js package.json\"",
-    "test": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:nodejs8.10 test.handler '{}'",
-    "test:results": "docker run --rm -v \"$PWD\":/var/task --user root lambci/lambda:nodejs8.10 test.handler '{\"saveResults\":true}'"
+    "build:install": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs10.x bash -c \"rm -rf node_modules && npm install\"",
+    "build": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs10.x bash -c \"rm -f *.zip && zip lighthouse-lambda.zip -r lib node_modules bin test.js package.json\"",
+    "test": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:nodejs10.x test.handler '{}'",
+    "test:results": "docker run --rm -v \"$PWD\":/var/task --user root lambci/lambda:nodejs10.x test.handler '{\"saveResults\":true}'"
   },
   "repository": {
     "type": "git",
@@ -30,12 +30,12 @@
     "serverless",
     "devtools"
   ],
-  "author": "JoyToCode <team@joytocode.com>",
+  "author": "JoyToCode <team@joytocode.com>, forked by AlanSwenson <alan@alanswenson.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joytocode/lighthouse-lambda/issues"
+    "url": "https://github.com/AlanSwenson/lighthouse-lambda"
   },
-  "homepage": "https://github.com/joytocode/lighthouse-lambda#readme",
+  "homepage": "https://github.com/AlanSwenson/lighthouse-lambda#readme",
   "dependencies": {
     "@serverless-chrome/lambda": "^1.0.0-54",
     "lighthouse": "^3.0.3"
