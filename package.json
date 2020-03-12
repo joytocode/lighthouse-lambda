@@ -12,10 +12,10 @@
   "scripts": {
     "lint": "standard --fix",
     "pretest": "standard",
-    "build:install": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs10.x bash -c \"rm -rf node_modules && npm install\"",
-    "build": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs10.x bash -c \"rm -f *.zip && zip lighthouse-lambda.zip -r lib node_modules bin test.js package.json\"",
-    "test": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:nodejs10.x test.handler '{}'",
-    "test:results": "docker run --rm -v \"$PWD\":/var/task --user root lambci/lambda:nodejs10.x test.handler '{\"saveResults\":true}'"
+    "build:install": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs12.x bash -c \"rm -rf node_modules && npm install\"",
+    "build": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:build-nodejs12.x bash -c \"rm -f *.zip && zip lighthouse-lambda.zip -r lib node_modules bin test.js package.json\"",
+    "test": "docker run --rm -v \"$PWD\":/var/task lambci/lambda:nodejs12.x test.handler '{}'",
+    "test:results": "docker run --rm -v \"$PWD\":/var/task --user root lambci/lambda:nodejs12.x test.handler '{\"saveResults\":true}'"
   },
   "repository": {
     "type": "git",
