@@ -1,9 +1,9 @@
 {
   "name": "lighthouse-lambda",
-  "version": "3.1.1",
+  "version": "5.6.0",
   "description": "Run Google Chrome Lighthouse on AWS Lambda.",
   "engines": {
-    "node": "10.x"
+    "node": "12.x"
   },
   "main": "lib/index.js",
   "files": [
@@ -38,7 +38,8 @@
   "homepage": "https://github.com/AlanSwenson/lighthouse-lambda#readme",
   "dependencies": {
     "chrome-aws-lambda": "^2.1.1",
-    "lighthouse": "^5.6.0"
+    "lighthouse": "^5.6.0",
+    "puppeteer-core": "^2.1.1"
   },
   "devDependencies": {
     "standard": "^11.0.1"
