@@ -1,0 +1,4470 @@
+{
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/80.0.3987.0 Safari/537.36",
+  "environment": {
+    "networkUserAgent": "",
+    "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/80.0.3987.0 Safari/537.36",
+    "benchmarkIndex": 92
+  },
+  "lighthouseVersion": "5.6.0",
+  "fetchTime": "2020-03-12T20:05:26.605Z",
+  "requestedUrl": "https://example.com/",
+  "finalUrl": "https://example.com/",
+  "runWarnings": [
+    "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Details: net::ERR_CERT_AUTHORITY_INVALID)"
+  ],
+  "runtimeError": {
+    "code": "FAILED_DOCUMENT_REQUEST",
+    "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Details: net::ERR_CERT_AUTHORITY_INVALID)"
+  },
+  "audits": {
+    "is-on-https": {
+      "id": "is-on-https",
+      "title": "Uses HTTPS",
+      "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "redirects-http": {
+      "id": "redirects-http",
+      "title": "Redirects HTTP traffic to HTTPS",
+      "description": "If you've already set up HTTPS, make sure that you redirect all HTTP traffic to HTTPS in order to enable secure web features for all your users. [Learn more](https://web.dev/redirects-http).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required HTTPRedirect gatherer did not run."
+    },
+    "service-worker": {
+      "id": "service-worker",
+      "title": "Registers a service worker that controls page and `start_url`",
+      "description": "The service worker is the technology that enables your app to use many Progressive Web App features, such as offline, add to homescreen, and push notifications. [Learn more](https://web.dev/service-worker).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ServiceWorker gatherer did not run."
+    },
+    "works-offline": {
+      "id": "works-offline",
+      "title": "Current page responds with a 200 when offline",
+      "description": "If you're building a Progressive Web App, consider using a service worker so that your app can work offline. [Learn more](https://web.dev/works-offline).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Offline gatherer did not run."
+    },
+    "viewport": {
+      "id": "viewport",
+      "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+      "description": "Add a `<meta name=\"viewport\">` tag to optimize your app for mobile screens. [Learn more](https://web.dev/viewport).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required MetaElements gatherer did not run."
+    },
+    "without-javascript": {
+      "id": "without-javascript",
+      "title": "Contains some content when JavaScript is not available",
+      "description": "Your app should display some content when JavaScript is disabled, even if it's just a warning to the user that JavaScript is required to use the app. [Learn more](https://web.dev/without-javascript).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required HTMLWithoutJavaScript gatherer did not run."
+    },
+    "first-contentful-paint": {
+      "id": "first-contentful-paint",
+      "title": "First Contentful Paint",
+      "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more](https://web.dev/first-contentful-paint).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "first-meaningful-paint": {
+      "id": "first-meaningful-paint",
+      "title": "First Meaningful Paint",
+      "description": "First Meaningful Paint measures when the primary content of a page is visible. [Learn more](https://web.dev/first-meaningful-paint).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "load-fast-enough-for-pwa": {
+      "id": "load-fast-enough-for-pwa",
+      "title": "Page load is fast enough on mobile networks",
+      "description": "A fast page load over a cellular network ensures a good mobile user experience. [Learn more](https://web.dev/load-fast-enough-for-pwa).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "speed-index": {
+      "id": "speed-index",
+      "title": "Speed Index",
+      "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more](https://web.dev/speed-index).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "screenshot-thumbnails": {
+      "id": "screenshot-thumbnails",
+      "title": "Screenshot Thumbnails",
+      "description": "This is what the load of your site looked like.",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "final-screenshot": {
+      "id": "final-screenshot",
+      "title": "Final Screenshot",
+      "description": "The last screenshot captured of the pageload.",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "estimated-input-latency": {
+      "id": "estimated-input-latency",
+      "title": "Estimated Input Latency",
+      "description": "Estimated Input Latency is an estimate of how long your app takes to respond to user input, in milliseconds, during the busiest 5s window of page load. If your latency is higher than 50 ms, users may perceive your app as laggy. [Learn more](https://web.dev/estimated-input-latency).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "total-blocking-time": {
+      "id": "total-blocking-time",
+      "title": "Total Blocking Time",
+      "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds.",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "max-potential-fid": {
+      "id": "max-potential-fid",
+      "title": "Max Potential First Input Delay",
+      "description": "The maximum potential First Input Delay that your users could experience is the duration, in milliseconds, of the longest task. [Learn more](https://developers.google.com/web/updates/2018/05/first-input-delay).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "errors-in-console": {
+      "id": "errors-in-console",
+      "title": "No browser errors logged to the console",
+      "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more](https://web.dev/errors-in-console)",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ConsoleMessages gatherer did not run."
+    },
+    "time-to-first-byte": {
+      "id": "time-to-first-byte",
+      "title": "Server response times are low (TTFB)",
+      "description": "Time To First Byte identifies the time at which your server sends a response. [Learn more](https://web.dev/time-to-first-byte).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "first-cpu-idle": {
+      "id": "first-cpu-idle",
+      "title": "First CPU Idle",
+      "description": "First CPU Idle marks the first time at which the page's main thread is quiet enough to handle input.  [Learn more](https://web.dev/first-cpu-idle).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "interactive": {
+      "id": "interactive",
+      "title": "Time to Interactive",
+      "description": "Time to interactive is the amount of time it takes for the page to become fully interactive. [Learn more](https://web.dev/interactive).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "user-timings": {
+      "id": "user-timings",
+      "title": "User Timing marks and measures",
+      "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more](https://web.dev/user-timings).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "critical-request-chains": {
+      "id": "critical-request-chains",
+      "title": "Avoid chaining critical requests",
+      "description": "The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load. [Learn more](https://web.dev/critical-request-chains).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "redirects": {
+      "id": "redirects",
+      "title": "Avoid multiple page redirects",
+      "description": "Redirects introduce additional delays before the page can be loaded. [Learn more](https://web.dev/redirects).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "installable-manifest": {
+      "id": "installable-manifest",
+      "title": "Web app manifest does not meet the installability requirements",
+      "description": "Browsers can proactively prompt users to add your app to their homescreen, which can lead to higher engagement. [Learn more](https://web.dev/installable-manifest).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "explanation": "Failures: No manifest was fetched.",
+      "details": {
+        "type": "debugdata",
+        "items": [
+          {
+            "failures": [
+              "No manifest was fetched"
+            ],
+            "isParseFailure": true,
+            "parseFailureReason": "No manifest was fetched"
+          }
+        ]
+      }
+    },
+    "apple-touch-icon": {
+      "id": "apple-touch-icon",
+      "title": "Provides a valid `apple-touch-icon`",
+      "description": "For ideal appearance on iOS when users add a progressive web app to the home screen, define an `apple-touch-icon`. It must point to a non-transparent 192px (or 180px) square PNG. [Learn More](https://web.dev/apple-touch-icon/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required LinkElements gatherer did not run."
+    },
+    "splash-screen": {
+      "id": "splash-screen",
+      "title": "Is not configured for a custom splash screen",
+      "description": "A themed splash screen ensures a high-quality experience when users launch your app from their homescreens. [Learn more](https://web.dev/splash-screen).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "explanation": "Failures: No manifest was fetched.",
+      "details": {
+        "type": "debugdata",
+        "items": [
+          {
+            "failures": [
+              "No manifest was fetched"
+            ],
+            "isParseFailure": true,
+            "parseFailureReason": "No manifest was fetched"
+          }
+        ]
+      }
+    },
+    "themed-omnibox": {
+      "id": "themed-omnibox",
+      "title": "Sets a theme color for the address bar.",
+      "description": "The browser address bar can be themed to match your site. [Learn more](https://web.dev/themed-omnibox).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required MetaElements gatherer did not run."
+    },
+    "content-width": {
+      "id": "content-width",
+      "title": "Content is sized correctly for the viewport",
+      "description": "If the width of your app's content doesn't match the width of the viewport, your app might not be optimized for mobile screens. [Learn more](https://web.dev/content-width).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ViewportDimensions gatherer did not run."
+    },
+    "image-aspect-ratio": {
+      "id": "image-aspect-ratio",
+      "title": "Displays images with correct aspect ratio",
+      "description": "Image display dimensions should match natural aspect ratio. [Learn more](https://web.dev/image-aspect-ratio).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ImageElements gatherer did not run."
+    },
+    "deprecations": {
+      "id": "deprecations",
+      "title": "Avoids deprecated APIs",
+      "description": "Deprecated APIs will eventually be removed from the browser. [Learn more](https://web.dev/deprecations).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ConsoleMessages gatherer did not run."
+    },
+    "mainthread-work-breakdown": {
+      "id": "mainthread-work-breakdown",
+      "title": "Minimizes main-thread work",
+      "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/mainthread-work-breakdown)",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "bootup-time": {
+      "id": "bootup-time",
+      "title": "JavaScript execution time",
+      "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/bootup-time).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "uses-rel-preload": {
+      "id": "uses-rel-preload",
+      "title": "Preload key requests",
+      "description": "Consider using `<link rel=preload>` to prioritize fetching resources that are currently requested later in page load. [Learn more](https://web.dev/uses-rel-preload).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "uses-rel-preconnect": {
+      "id": "uses-rel-preconnect",
+      "title": "Preconnect to required origins",
+      "description": "Consider adding `preconnect` or `dns-prefetch` resource hints to establish early connections to important third-party origins. [Learn more](https://web.dev/uses-rel-preconnect).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "font-display": {
+      "id": "font-display",
+      "title": "All text remains visible during webfont loads",
+      "description": "Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading. [Learn more](https://web.dev/font-display).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "diagnostics": {
+      "id": "diagnostics",
+      "title": "Diagnostics",
+      "description": "Collection of useful page vitals.",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "network-requests": {
+      "id": "network-requests",
+      "title": "Network Requests",
+      "description": "Lists the network requests that were made during page load.",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "network-rtt": {
+      "id": "network-rtt",
+      "title": "Network Round Trip Times",
+      "description": "Network round trip times (RTT) have a large impact on performance. If the RTT to an origin is high, it's an indication that servers closer to the user could improve performance. [Learn more](https://hpbn.co/primer-on-latency-and-bandwidth/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "network-server-latency": {
+      "id": "network-server-latency",
+      "title": "Server Backend Latencies",
+      "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "main-thread-tasks": {
+      "id": "main-thread-tasks",
+      "title": "Tasks",
+      "description": "Lists the toplevel main thread tasks that executed during page load.",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "metrics": {
+      "id": "metrics",
+      "title": "Metrics",
+      "description": "Collects all available metrics.",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "offline-start-url": {
+      "id": "offline-start-url",
+      "title": "`start_url` responds with a 200 when offline",
+      "description": "A service worker enables your web app to be reliable in unpredictable network conditions. [Learn more](https://web.dev/offline-start-url).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required StartUrl gatherer did not run."
+    },
+    "performance-budget": {
+      "id": "performance-budget",
+      "title": "Performance budget",
+      "description": "Keep the quantity and size of network requests under the targets set by the provided performance budget. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "resource-summary": {
+      "id": "resource-summary",
+      "title": "Keep request counts low and transfer sizes small",
+      "description": "To set budgets for the quantity and size of page resources, add a budget.json file. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "third-party-summary": {
+      "id": "third-party-summary",
+      "title": "Minimize third-party usage",
+      "description": "Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading. [Learn more](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required traces gatherer did not run."
+    },
+    "pwa-cross-browser": {
+      "id": "pwa-cross-browser",
+      "title": "Site works cross-browser",
+      "description": "To reach the most number of users, sites should work across every major browser. [Learn more](https://web.dev/pwa-cross-browser).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "pwa-page-transitions": {
+      "id": "pwa-page-transitions",
+      "title": "Page transitions don't feel like they block on the network",
+      "description": "Transitions should feel snappy as you tap around, even on a slow network. This experience is key to a user's perception of performance. [Learn more](https://web.dev/pwa-page-transitions).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "pwa-each-page-has-url": {
+      "id": "pwa-each-page-has-url",
+      "title": "Each page has a URL",
+      "description": "Ensure individual pages are deep linkable via URL and that URLs are unique for the purpose of shareability on social media. [Learn more](https://web.dev/pwa-each-page-has-url).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "accesskeys": {
+      "id": "accesskeys",
+      "title": "`[accesskey]` values are unique",
+      "description": "Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. [Learn more](https://web.dev/accesskeys/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "aria-allowed-attr": {
+      "id": "aria-allowed-attr",
+      "title": "`[aria-*]` attributes match their roles",
+      "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn more](https://web.dev/aria-allowed-attr/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "aria-required-attr": {
+      "id": "aria-required-attr",
+      "title": "`[role]`s have all required `[aria-*]` attributes",
+      "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more](https://web.dev/aria-required-attr/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "aria-required-children": {
+      "id": "aria-required-children",
+      "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` have all required children.",
+      "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more](https://web.dev/aria-required-children/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "aria-required-parent": {
+      "id": "aria-required-parent",
+      "title": "`[role]`s are contained by their required parent element",
+      "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more](https://web.dev/aria-required-parent/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "aria-roles": {
+      "id": "aria-roles",
+      "title": "`[role]` values are valid",
+      "description": "ARIA roles must have valid values in order to perform their intended accessibility functions. [Learn more](https://web.dev/aria-roles/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "aria-valid-attr-value": {
+      "id": "aria-valid-attr-value",
+      "title": "`[aria-*]` attributes have valid values",
+      "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more](https://web.dev/aria-valid-attr-value/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "aria-valid-attr": {
+      "id": "aria-valid-attr",
+      "title": "`[aria-*]` attributes are valid and not misspelled",
+      "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more](https://web.dev/aria-valid-attr/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "audio-caption": {
+      "id": "audio-caption",
+      "title": "`<audio>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+      "description": "Captions make audio elements usable for deaf or hearing-impaired users, providing critical information such as who is talking, what they're saying, and other non-speech information. [Learn more](https://web.dev/audio-caption/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "button-name": {
+      "id": "button-name",
+      "title": "Buttons have an accessible name",
+      "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn more](https://web.dev/button-name/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "bypass": {
+      "id": "bypass",
+      "title": "The page contains a heading, skip link, or landmark region",
+      "description": "Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. [Learn more](https://web.dev/bypass/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "color-contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn more](https://web.dev/color-contrast/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "definition-list": {
+      "id": "definition-list",
+      "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>` or `<template>` elements.",
+      "description": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn more](https://web.dev/definition-list/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "dlitem": {
+      "id": "dlitem",
+      "title": "Definition list items are wrapped in `<dl>` elements",
+      "description": "Definition list items (`<dt>` and `<dd>`) must be wrapped in a parent `<dl>` element to ensure that screen readers can properly announce them. [Learn more](https://web.dev/dlitem/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "document-title": {
+      "id": "document-title",
+      "title": "Document has a `<title>` element",
+      "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more](https://web.dev/document-title/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "duplicate-id": {
+      "id": "duplicate-id",
+      "title": "`[id]` attributes on the page are unique",
+      "description": "The value of an id attribute must be unique to prevent other instances from being overlooked by assistive technologies. [Learn more](https://web.dev/duplicate-id/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "frame-title": {
+      "id": "frame-title",
+      "title": "`<frame>` or `<iframe>` elements have a title",
+      "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://web.dev/frame-title/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "html-has-lang": {
+      "id": "html-has-lang",
+      "title": "`<html>` element has a `[lang]` attribute",
+      "description": "If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more](https://web.dev/html-has-lang/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "html-lang-valid": {
+      "id": "html-lang-valid",
+      "title": "`<html>` element has a valid value for its `[lang]` attribute",
+      "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn more](https://web.dev/html-lang-valid/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "image-alt": {
+      "id": "image-alt",
+      "title": "Image elements have `[alt]` attributes",
+      "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more](https://web.dev/image-alt/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "input-image-alt": {
+      "id": "input-image-alt",
+      "title": "`<input type=\"image\">` elements have `[alt]` text",
+      "description": "When an image is being used as an `<input>` button, providing alternative text can help screen reader users understand the purpose of the button. [Learn more](https://web.dev/input-image-alt/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "label": {
+      "id": "label",
+      "title": "Form elements have associated labels",
+      "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more](https://web.dev/label/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "layout-table": {
+      "id": "layout-table",
+      "title": "Presentational `<table>` elements avoid using `<th>`, `<caption>` or the `[summary]` attribute.",
+      "description": "A table being used for layout purposes should not include data elements, such as the th or caption elements or the summary attribute, because this can create a confusing experience for screen reader users. [Learn more](https://web.dev/layout-table/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "link-name": {
+      "id": "link-name",
+      "title": "Links have a discernible name",
+      "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn more](https://web.dev/link-name/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "list": {
+      "id": "list",
+      "title": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+      "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more](https://web.dev/list/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "listitem": {
+      "id": "listitem",
+      "title": "List items (`<li>`) are contained within `<ul>` or `<ol>` parent elements",
+      "description": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>` or `<ol>` to be announced properly. [Learn more](https://web.dev/listitem/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "meta-refresh": {
+      "id": "meta-refresh",
+      "title": "The document does not use `<meta http-equiv=\"refresh\">`",
+      "description": "Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. [Learn more](https://web.dev/meta-refresh/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "meta-viewport": {
+      "id": "meta-viewport",
+      "title": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` element and the `[maximum-scale]` attribute is not less than 5.",
+      "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more](https://web.dev/meta-viewport/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "object-alt": {
+      "id": "object-alt",
+      "title": "`<object>` elements have `[alt]` text",
+      "description": "Screen readers cannot translate non-text content. Adding alt text to `<object>` elements helps screen readers convey meaning to users. [Learn more](https://web.dev/object-alt/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "tabindex": {
+      "id": "tabindex",
+      "title": "No element has a `[tabindex]` value greater than 0",
+      "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://web.dev/tabindex/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "td-headers-attr": {
+      "id": "td-headers-attr",
+      "title": "Cells in a `<table>` element that use the `[headers]` attribute refer to table cells within the same table.",
+      "description": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more](https://web.dev/td-headers-attr/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "th-has-data-cells": {
+      "id": "th-has-data-cells",
+      "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
+      "description": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more](https://web.dev/th-has-data-cells/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "valid-lang": {
+      "id": "valid-lang",
+      "title": "`[lang]` attributes have a valid value",
+      "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn more](https://web.dev/valid-lang/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "video-caption": {
+      "id": "video-caption",
+      "title": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+      "description": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more](https://web.dev/video-caption/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "video-description": {
+      "id": "video-description",
+      "title": "`<video>` elements contain a `<track>` element with `[kind=\"description\"]`",
+      "description": "Audio descriptions provide relevant information for videos that dialogue cannot, such as facial expressions and scenes. [Learn more](https://web.dev/video-description/).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Accessibility gatherer did not run."
+    },
+    "custom-controls-labels": {
+      "id": "custom-controls-labels",
+      "title": "Custom controls have associated labels",
+      "description": "Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more](https://web.dev/custom-controls-labels/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "custom-controls-roles": {
+      "id": "custom-controls-roles",
+      "title": "Custom controls have ARIA roles",
+      "description": "Custom interactive controls have appropriate ARIA roles. [Learn more](https://web.dev/custom-control-roles/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "focus-traps": {
+      "id": "focus-traps",
+      "title": "User focus is not accidentally trapped in a region",
+      "description": "A user can tab into and out of any control or region without accidentally trapping their focus. [Learn more](https://web.dev/focus-traps/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "focusable-controls": {
+      "id": "focusable-controls",
+      "title": "Interactive controls are keyboard focusable",
+      "description": "Custom interactive controls are keyboard focusable and display a focus indicator. [Learn more](https://web.dev/focusable-controls/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "heading-levels": {
+      "id": "heading-levels",
+      "title": "Headings don't skip levels",
+      "description": "Headings are used to create an outline for the page and heading levels are not skipped. [Learn more](https://web.dev/heading-levels/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "interactive-element-affordance": {
+      "id": "interactive-element-affordance",
+      "title": "Interactive elements indicate their purpose and state",
+      "description": "Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn more](https://web.dev/interactive-element-affordance/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "logical-tab-order": {
+      "id": "logical-tab-order",
+      "title": "The page has a logical tab order",
+      "description": "Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more](https://web.dev/logical-tab-order/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "managed-focus": {
+      "id": "managed-focus",
+      "title": "The user's focus is directed to new content added to the page",
+      "description": "If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn more](https://web.dev/managed-focus/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "offscreen-content-hidden": {
+      "id": "offscreen-content-hidden",
+      "title": "Offscreen content is hidden from assistive technology",
+      "description": "Offscreen content is hidden with display: none or aria-hidden=true. [Learn more](https://web.dev/offscreen-content-hidden/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "use-landmarks": {
+      "id": "use-landmarks",
+      "title": "HTML5 landmark elements are used to improve navigation",
+      "description": "Landmark elements (<main>, <nav>, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more](https://web.dev/use-landmarks/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "visual-order-follows-dom": {
+      "id": "visual-order-follows-dom",
+      "title": "Visual order on the page follows DOM order",
+      "description": "DOM order matches the visual order, improving navigation for assistive technology. [Learn more](https://web.dev/visual-order-follows-dom/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "uses-long-cache-ttl": {
+      "id": "uses-long-cache-ttl",
+      "title": "Uses efficient cache policy on static assets",
+      "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more](https://web.dev/uses-long-cache-ttl).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "total-byte-weight": {
+      "id": "total-byte-weight",
+      "title": "Avoids enormous network payloads",
+      "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://web.dev/total-byte-weight).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "offscreen-images": {
+      "id": "offscreen-images",
+      "title": "Defer offscreen images",
+      "description": "Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive. [Learn more](https://web.dev/offscreen-images).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ImageElements gatherer did not run."
+    },
+    "render-blocking-resources": {
+      "id": "render-blocking-resources",
+      "title": "Eliminate render-blocking resources",
+      "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://web.dev/render-blocking-resources).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required TagsBlockingFirstPaint gatherer did not run."
+    },
+    "unminified-css": {
+      "id": "unminified-css",
+      "title": "Minify CSS",
+      "description": "Minifying CSS files can reduce network payload sizes. [Learn more](https://web.dev/unminified-css).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required CSSUsage gatherer did not run."
+    },
+    "unminified-javascript": {
+      "id": "unminified-javascript",
+      "title": "Minify JavaScript",
+      "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://web.dev/unminified-javascript).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ScriptElements gatherer did not run."
+    },
+    "unused-css-rules": {
+      "id": "unused-css-rules",
+      "title": "Remove unused CSS",
+      "description": "Remove dead rules from stylesheets and defer the loading of CSS not used for above-the-fold content to reduce unnecessary bytes consumed by network activity. [Learn more](https://web.dev/unused-css-rules).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required CSSUsage gatherer did not run."
+    },
+    "uses-webp-images": {
+      "id": "uses-webp-images",
+      "title": "Serve images in next-gen formats",
+      "description": "Image formats like JPEG 2000, JPEG XR, and WebP often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more](https://web.dev/uses-webp-images).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required OptimizedImages gatherer did not run."
+    },
+    "uses-optimized-images": {
+      "id": "uses-optimized-images",
+      "title": "Efficiently encode images",
+      "description": "Optimized images load faster and consume less cellular data. [Learn more](https://web.dev/uses-optimized-images).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required OptimizedImages gatherer did not run."
+    },
+    "uses-text-compression": {
+      "id": "uses-text-compression",
+      "title": "Enable text compression",
+      "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more](https://web.dev/uses-text-compression).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ResponseCompression gatherer did not run."
+    },
+    "uses-responsive-images": {
+      "id": "uses-responsive-images",
+      "title": "Properly size images",
+      "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn more](https://web.dev/uses-responsive-images).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ImageElements gatherer did not run."
+    },
+    "efficient-animated-content": {
+      "id": "efficient-animated-content",
+      "title": "Use video formats for animated content",
+      "description": "Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and PNG/WebP for static images instead of GIF to save network bytes. [Learn more](https://web.dev/efficient-animated-content)",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "appcache-manifest": {
+      "id": "appcache-manifest",
+      "title": "Avoids Application Cache",
+      "description": "Application Cache is deprecated. [Learn more](https://web.dev/appcache-manifest).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required AppCacheManifest gatherer did not run."
+    },
+    "doctype": {
+      "id": "doctype",
+      "title": "Page has the HTML doctype",
+      "description": "Specifying a doctype prevents the browser from switching to quirks-mode. [Learn more](https://web.dev/doctype).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required Doctype gatherer did not run."
+    },
+    "dom-size": {
+      "id": "dom-size",
+      "title": "Avoids an excessive DOM size",
+      "description": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn more](https://web.dev/dom-size).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required DOMStats gatherer did not run."
+    },
+    "external-anchors-use-rel-noopener": {
+      "id": "external-anchors-use-rel-noopener",
+      "title": "Links to cross-origin destinations are safe",
+      "description": "Add `rel=\"noopener\"` or `rel=\"noreferrer\"` to any external links to improve performance and prevent security vulnerabilities. [Learn more](https://web.dev/external-anchors-use-rel-noopener).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required AnchorElements gatherer did not run."
+    },
+    "geolocation-on-start": {
+      "id": "geolocation-on-start",
+      "title": "Avoids requesting the geolocation permission on page load",
+      "description": "Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to a user action instead. [Learn more](https://web.dev/geolocation-on-start).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ConsoleMessages gatherer did not run."
+    },
+    "no-document-write": {
+      "id": "no-document-write",
+      "title": "Avoids `document.write()`",
+      "description": "For users on slow connections, external scripts dynamically injected via `document.write()` can delay page load by tens of seconds. [Learn more](https://web.dev/no-document-write).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ConsoleMessages gatherer did not run."
+    },
+    "no-vulnerable-libraries": {
+      "id": "no-vulnerable-libraries",
+      "title": "Avoids front-end JavaScript libraries with known security vulnerabilities",
+      "description": "Some third-party scripts may contain known security vulnerabilities that are easily identified and exploited by attackers. [Learn more](https://web.dev/no-vulnerable-libraries).",
+      "score": 1,
+      "scoreDisplayMode": "binary"
+    },
+    "js-libraries": {
+      "id": "js-libraries",
+      "title": "Detected JavaScript libraries",
+      "description": "All front-end JavaScript libraries detected on the page. [Learn more](https://web.dev/js-libraries).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": [],
+        "summary": {}
+      }
+    },
+    "notification-on-start": {
+      "id": "notification-on-start",
+      "title": "Avoids requesting the notification permission on page load",
+      "description": "Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. [Learn more](https://web.dev/notification-on-start).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ConsoleMessages gatherer did not run."
+    },
+    "password-inputs-can-be-pasted-into": {
+      "id": "password-inputs-can-be-pasted-into",
+      "title": "Allows users to paste into password fields",
+      "description": "Preventing password pasting undermines good security policy. [Learn more](https://web.dev/password-inputs-can-be-pasted-into).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required PasswordInputsWithPreventedPaste gatherer did not run."
+    },
+    "uses-http2": {
+      "id": "uses-http2",
+      "title": "Uses HTTP/2 for its own resources",
+      "description": "HTTP/2 offers many benefits over HTTP/1.1, including binary headers, multiplexing, and server push. [Learn more](https://web.dev/uses-http2).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "uses-passive-event-listeners": {
+      "id": "uses-passive-event-listeners",
+      "title": "Uses passive listeners to improve scrolling performance",
+      "description": "Consider marking your touch and wheel event listeners as `passive` to improve your page's scroll performance. [Learn more](https://web.dev/uses-passive-event-listeners).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required ConsoleMessages gatherer did not run."
+    },
+    "meta-description": {
+      "id": "meta-description",
+      "title": "Document has a meta description",
+      "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more](https://web.dev/meta-description).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required MetaElements gatherer did not run."
+    },
+    "http-status-code": {
+      "id": "http-status-code",
+      "title": "Page has successful HTTP status code",
+      "description": "Pages with unsuccessful HTTP status codes may not be indexed properly. [Learn more](https://web.dev/http-status-code).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required devtoolsLogs gatherer did not run."
+    },
+    "font-size": {
+      "id": "font-size",
+      "title": "Document uses legible font sizes",
+      "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to have >60% of page text ≥12px. [Learn more](https://web.dev/font-size).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required FontSize gatherer did not run."
+    },
+    "link-text": {
+      "id": "link-text",
+      "title": "Links have descriptive text",
+      "description": "Descriptive link text helps search engines understand your content. [Learn more](https://web.dev/link-text).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required AnchorElements gatherer did not run."
+    },
+    "is-crawlable": {
+      "id": "is-crawlable",
+      "title": "Page isn’t blocked from indexing",
+      "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more](https://web.dev/is-crawable).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required MetaElements gatherer did not run."
+    },
+    "robots-txt": {
+      "id": "robots-txt",
+      "title": "robots.txt is valid",
+      "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed. [Learn more](https://web.dev/robots-txt).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required RobotsTxt gatherer did not run."
+    },
+    "tap-targets": {
+      "id": "tap-targets",
+      "title": "Tap targets are sized appropriately",
+      "description": "Interactive elements like buttons and links should be large enough (48x48px), and have enough space around them, to be easy enough to tap without overlapping onto other elements. [Learn more](https://web.dev/tap-targets).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required MetaElements gatherer did not run."
+    },
+    "hreflang": {
+      "id": "hreflang",
+      "title": "Document has a valid `hreflang`",
+      "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more](https://web.dev/hreflang).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required LinkElements gatherer did not run."
+    },
+    "plugins": {
+      "id": "plugins",
+      "title": "Document avoids plugins",
+      "description": "Search engines can't index plugin content, and many devices restrict plugins or don't support them. [Learn more](https://web.dev/plugins).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required EmbeddedContent gatherer did not run."
+    },
+    "canonical": {
+      "id": "canonical",
+      "title": "Document has a valid `rel=canonical`",
+      "description": "Canonical links suggest which URL to show in search results. [Learn more](https://web.dev/canonical).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required LinkElements gatherer did not run."
+    },
+    "structured-data": {
+      "id": "structured-data",
+      "title": "Structured data is valid",
+      "description": "Run the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more](https://web.dev/structured-data).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    }
+  },
+  "configSettings": {
+    "output": "html",
+    "maxWaitForFcp": 30000,
+    "maxWaitForLoad": 45000,
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "auditMode": false,
+    "gatherMode": false,
+    "disableStorageReset": false,
+    "emulatedFormFactor": "mobile",
+    "channel": "node",
+    "budgets": null,
+    "locale": "en-US",
+    "blockedUrlPatterns": null,
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "precomputedLanternData": null,
+    "onlyAudits": null,
+    "onlyCategories": null,
+    "skipAudits": null
+  },
+  "categories": {
+    "performance": {
+      "title": "Performance",
+      "auditRefs": [
+        {
+          "id": "first-contentful-paint",
+          "weight": 3,
+          "group": "metrics"
+        },
+        {
+          "id": "first-meaningful-paint",
+          "weight": 1,
+          "group": "metrics"
+        },
+        {
+          "id": "speed-index",
+          "weight": 4,
+          "group": "metrics"
+        },
+        {
+          "id": "interactive",
+          "weight": 5,
+          "group": "metrics"
+        },
+        {
+          "id": "first-cpu-idle",
+          "weight": 2,
+          "group": "metrics"
+        },
+        {
+          "id": "max-potential-fid",
+          "weight": 0,
+          "group": "metrics"
+        },
+        {
+          "id": "estimated-input-latency",
+          "weight": 0
+        },
+        {
+          "id": "total-blocking-time",
+          "weight": 0
+        },
+        {
+          "id": "render-blocking-resources",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-responsive-images",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "offscreen-images",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "unminified-css",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "unminified-javascript",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "unused-css-rules",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-optimized-images",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-webp-images",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-text-compression",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-rel-preconnect",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "time-to-first-byte",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "redirects",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-rel-preload",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "efficient-animated-content",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "total-byte-weight",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "uses-long-cache-ttl",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "dom-size",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "critical-request-chains",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "user-timings",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "bootup-time",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "font-display",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "performance-budget",
+          "weight": 0,
+          "group": "budgets"
+        },
+        {
+          "id": "resource-summary",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "third-party-summary",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "network-requests",
+          "weight": 0
+        },
+        {
+          "id": "network-rtt",
+          "weight": 0
+        },
+        {
+          "id": "network-server-latency",
+          "weight": 0
+        },
+        {
+          "id": "main-thread-tasks",
+          "weight": 0
+        },
+        {
+          "id": "diagnostics",
+          "weight": 0
+        },
+        {
+          "id": "metrics",
+          "weight": 0
+        },
+        {
+          "id": "screenshot-thumbnails",
+          "weight": 0
+        },
+        {
+          "id": "final-screenshot",
+          "weight": 0
+        }
+      ],
+      "id": "performance",
+      "score": null
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
+      "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+      "auditRefs": [
+        {
+          "id": "accesskeys",
+          "weight": 3,
+          "group": "a11y-navigation"
+        },
+        {
+          "id": "aria-allowed-attr",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-attr",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-children",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-parent",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-roles",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-valid-attr",
+          "weight": 10,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "audio-caption",
+          "weight": 10,
+          "group": "a11y-audio-video"
+        },
+        {
+          "id": "button-name",
+          "weight": 10,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "bypass",
+          "weight": 3,
+          "group": "a11y-navigation"
+        },
+        {
+          "id": "color-contrast",
+          "weight": 3,
+          "group": "a11y-color-contrast"
+        },
+        {
+          "id": "definition-list",
+          "weight": 3,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "dlitem",
+          "weight": 3,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "document-title",
+          "weight": 3,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "duplicate-id",
+          "weight": 1,
+          "group": "a11y-best-practices"
+        },
+        {
+          "id": "frame-title",
+          "weight": 3,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "html-has-lang",
+          "weight": 3,
+          "group": "a11y-language"
+        },
+        {
+          "id": "html-lang-valid",
+          "weight": 3,
+          "group": "a11y-language"
+        },
+        {
+          "id": "image-alt",
+          "weight": 10,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "input-image-alt",
+          "weight": 10,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "label",
+          "weight": 10,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "layout-table",
+          "weight": 3,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "link-name",
+          "weight": 3,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "list",
+          "weight": 3,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "listitem",
+          "weight": 3,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "meta-refresh",
+          "weight": 10,
+          "group": "a11y-best-practices"
+        },
+        {
+          "id": "meta-viewport",
+          "weight": 10,
+          "group": "a11y-best-practices"
+        },
+        {
+          "id": "object-alt",
+          "weight": 3,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "tabindex",
+          "weight": 3,
+          "group": "a11y-navigation"
+        },
+        {
+          "id": "td-headers-attr",
+          "weight": 3,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "th-has-data-cells",
+          "weight": 3,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "valid-lang",
+          "weight": 3,
+          "group": "a11y-language"
+        },
+        {
+          "id": "video-caption",
+          "weight": 10,
+          "group": "a11y-audio-video"
+        },
+        {
+          "id": "video-description",
+          "weight": 10,
+          "group": "a11y-audio-video"
+        },
+        {
+          "id": "logical-tab-order",
+          "weight": 0
+        },
+        {
+          "id": "focusable-controls",
+          "weight": 0
+        },
+        {
+          "id": "interactive-element-affordance",
+          "weight": 0
+        },
+        {
+          "id": "managed-focus",
+          "weight": 0
+        },
+        {
+          "id": "focus-traps",
+          "weight": 0
+        },
+        {
+          "id": "custom-controls-labels",
+          "weight": 0
+        },
+        {
+          "id": "custom-controls-roles",
+          "weight": 0
+        },
+        {
+          "id": "visual-order-follows-dom",
+          "weight": 0
+        },
+        {
+          "id": "offscreen-content-hidden",
+          "weight": 0
+        },
+        {
+          "id": "heading-levels",
+          "weight": 0
+        },
+        {
+          "id": "use-landmarks",
+          "weight": 0
+        }
+      ],
+      "id": "accessibility",
+      "score": null
+    },
+    "best-practices": {
+      "title": "Best Practices",
+      "auditRefs": [
+        {
+          "id": "appcache-manifest",
+          "weight": 1
+        },
+        {
+          "id": "is-on-https",
+          "weight": 1
+        },
+        {
+          "id": "uses-http2",
+          "weight": 1
+        },
+        {
+          "id": "uses-passive-event-listeners",
+          "weight": 1
+        },
+        {
+          "id": "no-document-write",
+          "weight": 1
+        },
+        {
+          "id": "external-anchors-use-rel-noopener",
+          "weight": 1
+        },
+        {
+          "id": "geolocation-on-start",
+          "weight": 1
+        },
+        {
+          "id": "doctype",
+          "weight": 1
+        },
+        {
+          "id": "no-vulnerable-libraries",
+          "weight": 1
+        },
+        {
+          "id": "js-libraries",
+          "weight": 0
+        },
+        {
+          "id": "notification-on-start",
+          "weight": 1
+        },
+        {
+          "id": "deprecations",
+          "weight": 1
+        },
+        {
+          "id": "password-inputs-can-be-pasted-into",
+          "weight": 1
+        },
+        {
+          "id": "errors-in-console",
+          "weight": 1
+        },
+        {
+          "id": "image-aspect-ratio",
+          "weight": 1
+        }
+      ],
+      "id": "best-practices",
+      "score": null
+    },
+    "seo": {
+      "title": "SEO",
+      "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
+      "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+      "auditRefs": [
+        {
+          "id": "viewport",
+          "weight": 1,
+          "group": "seo-mobile"
+        },
+        {
+          "id": "document-title",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "meta-description",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "http-status-code",
+          "weight": 1,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "link-text",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "is-crawlable",
+          "weight": 1,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "robots-txt",
+          "weight": 1,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "image-alt",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "hreflang",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "canonical",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "font-size",
+          "weight": 1,
+          "group": "seo-mobile"
+        },
+        {
+          "id": "plugins",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "tap-targets",
+          "weight": 1,
+          "group": "seo-mobile"
+        },
+        {
+          "id": "structured-data",
+          "weight": 0
+        }
+      ],
+      "id": "seo",
+      "score": null
+    },
+    "pwa": {
+      "title": "Progressive Web App",
+      "description": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist).",
+      "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+      "auditRefs": [
+        {
+          "id": "load-fast-enough-for-pwa",
+          "weight": 7,
+          "group": "pwa-fast-reliable"
+        },
+        {
+          "id": "works-offline",
+          "weight": 5,
+          "group": "pwa-fast-reliable"
+        },
+        {
+          "id": "offline-start-url",
+          "weight": 1,
+          "group": "pwa-fast-reliable"
+        },
+        {
+          "id": "is-on-https",
+          "weight": 2,
+          "group": "pwa-installable"
+        },
+        {
+          "id": "service-worker",
+          "weight": 1,
+          "group": "pwa-installable"
+        },
+        {
+          "id": "installable-manifest",
+          "weight": 2,
+          "group": "pwa-installable"
+        },
+        {
+          "id": "redirects-http",
+          "weight": 2,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "splash-screen",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "themed-omnibox",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "content-width",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "viewport",
+          "weight": 2,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "without-javascript",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "apple-touch-icon",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "pwa-cross-browser",
+          "weight": 0
+        },
+        {
+          "id": "pwa-page-transitions",
+          "weight": 0
+        },
+        {
+          "id": "pwa-each-page-has-url",
+          "weight": 0
+        }
+      ],
+      "id": "pwa",
+      "score": null
+    }
+  },
+  "categoryGroups": {
+    "metrics": {
+      "title": "Metrics"
+    },
+    "load-opportunities": {
+      "title": "Opportunities",
+      "description": "These suggestions can help your page load faster. They don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+    },
+    "budgets": {
+      "title": "Budgets",
+      "description": "Performance budgets set standards for the performance of your site."
+    },
+    "diagnostics": {
+      "title": "Diagnostics",
+      "description": "More information about the performance of your application. These numbers don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+    },
+    "pwa-fast-reliable": {
+      "title": "Fast and reliable"
+    },
+    "pwa-installable": {
+      "title": "Installable"
+    },
+    "pwa-optimized": {
+      "title": "PWA Optimized"
+    },
+    "a11y-best-practices": {
+      "title": "Best practices",
+      "description": "These items highlight common accessibility best practices."
+    },
+    "a11y-color-contrast": {
+      "title": "Contrast",
+      "description": "These are opportunities to improve the legibility of your content."
+    },
+    "a11y-names-labels": {
+      "title": "Names and labels",
+      "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+    },
+    "a11y-navigation": {
+      "title": "Navigation",
+      "description": "These are opportunities to improve keyboard navigation in your application."
+    },
+    "a11y-aria": {
+      "title": "ARIA",
+      "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+    },
+    "a11y-language": {
+      "title": "Internationalization and localization",
+      "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+    },
+    "a11y-audio-video": {
+      "title": "Audio and video",
+      "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+    },
+    "a11y-tables-lists": {
+      "title": "Tables and lists",
+      "description": "These are opportunities to to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+    },
+    "seo-mobile": {
+      "title": "Mobile Friendly",
+      "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+    },
+    "seo-content": {
+      "title": "Content Best Practices",
+      "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+    },
+    "seo-crawl": {
+      "title": "Crawling and Indexing",
+      "description": "To appear in search results, crawlers need access to your app."
+    }
+  },
+  "timing": {
+    "entries": [
+      {
+        "startTime": 4716.42,
+        "name": "lh:init:config",
+        "duration": 2381.99,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 4720.63,
+        "name": "lh:config:requireGatherers",
+        "duration": 413.59,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5134.71,
+        "name": "lh:config:requireAudits",
+        "duration": 1933.3,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 7099.87,
+        "name": "lh:runner:run",
+        "duration": 31547.62,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 7105.71,
+        "name": "lh:init:connect",
+        "duration": 235.6,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 7341.94,
+        "name": "lh:gather:loadBlank",
+        "duration": 53.93,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 7396.17,
+        "name": "lh:gather:getVersion",
+        "duration": 5.09,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 7404.76,
+        "name": "lh:gather:getBenchmarkIndex",
+        "duration": 515.94,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 7920.9,
+        "name": "lh:gather:setupDriver",
+        "duration": 76.27,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 7997.72,
+        "name": "lh:gather:loadBlank",
+        "duration": 75.29,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8073.3,
+        "name": "lh:gather:setupPassNetwork",
+        "duration": 10.41,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8083.99,
+        "name": "lh:driver:cleanBrowserCaches",
+        "duration": 23.98,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8108.33,
+        "name": "lh:gather:beforePass",
+        "duration": 10.74,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8108.41,
+        "name": "lh:gather:beforePass:CSSUsage",
+        "duration": 0.4,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8108.99,
+        "name": "lh:gather:beforePass:ViewportDimensions",
+        "duration": 0.09,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8109.12,
+        "name": "lh:gather:beforePass:RuntimeExceptions",
+        "duration": 0.24,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8109.56,
+        "name": "lh:gather:beforePass:ConsoleMessages",
+        "duration": 5.45,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.08,
+        "name": "lh:gather:beforePass:AnchorElements",
+        "duration": 0.05,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.17,
+        "name": "lh:gather:beforePass:ImageElements",
+        "duration": 0.04,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.23,
+        "name": "lh:gather:beforePass:LinkElements",
+        "duration": 0.04,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.3,
+        "name": "lh:gather:beforePass:MetaElements",
+        "duration": 0.04,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.38,
+        "name": "lh:gather:beforePass:ScriptElements",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.58,
+        "name": "lh:gather:beforePass:IFrameElements",
+        "duration": 0.07,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.71,
+        "name": "lh:gather:beforePass:MainDocumentContent",
+        "duration": 0.04,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.77,
+        "name": "lh:gather:beforePass:AppCacheManifest",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.83,
+        "name": "lh:gather:beforePass:Doctype",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.89,
+        "name": "lh:gather:beforePass:DOMStats",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8115.95,
+        "name": "lh:gather:beforePass:OptimizedImages",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8116.01,
+        "name": "lh:gather:beforePass:PasswordInputsWithPreventedPaste",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8116.06,
+        "name": "lh:gather:beforePass:ResponseCompression",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8116.11,
+        "name": "lh:gather:beforePass:TagsBlockingFirstPaint",
+        "duration": 2.45,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8118.74,
+        "name": "lh:gather:beforePass:FontSize",
+        "duration": 0.06,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8118.83,
+        "name": "lh:gather:beforePass:EmbeddedContent",
+        "duration": 0.06,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8118.92,
+        "name": "lh:gather:beforePass:RobotsTxt",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8118.97,
+        "name": "lh:gather:beforePass:TapTargets",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8119.02,
+        "name": "lh:gather:beforePass:Accessibility",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8119.26,
+        "name": "lh:gather:beginRecording",
+        "duration": 21.05,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8123.62,
+        "name": "lh:gather:getVersion",
+        "duration": 2.57,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 8141.6,
+        "name": "lh:gather:loadPage-defaultPass",
+        "duration": 30027.94,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38169.9,
+        "name": "lh:gather:pass",
+        "duration": 6.3,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38176.74,
+        "name": "lh:gather:getTrace",
+        "duration": 61.67,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38238.44,
+        "name": "lh:gather:getDevtoolsLog",
+        "duration": 1.74,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38260.33,
+        "name": "lh:gather:disconnect",
+        "duration": 18.44,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38279.44,
+        "name": "lh:runner:auditing",
+        "duration": 356.75,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38298.8,
+        "name": "lh:audit:is-on-https",
+        "duration": 5.32,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38304.71,
+        "name": "lh:audit:redirects-http",
+        "duration": 1.05,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38306.68,
+        "name": "lh:audit:service-worker",
+        "duration": 3.01,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38310.71,
+        "name": "lh:audit:works-offline",
+        "duration": 3.36,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38314.65,
+        "name": "lh:audit:viewport",
+        "duration": 2.82,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38318.45,
+        "name": "lh:audit:without-javascript",
+        "duration": 3.48,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38322.37,
+        "name": "lh:audit:first-contentful-paint",
+        "duration": 1.81,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38324.92,
+        "name": "lh:audit:first-meaningful-paint",
+        "duration": 0.91,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38326.79,
+        "name": "lh:audit:load-fast-enough-for-pwa",
+        "duration": 1.08,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38329.13,
+        "name": "lh:audit:speed-index",
+        "duration": 1.41,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38330.64,
+        "name": "lh:audit:screenshot-thumbnails",
+        "duration": 0.91,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38331.6,
+        "name": "lh:audit:final-screenshot",
+        "duration": 0.55,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38333,
+        "name": "lh:audit:estimated-input-latency",
+        "duration": 1.1,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38334.72,
+        "name": "lh:audit:total-blocking-time",
+        "duration": 0.93,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38336.46,
+        "name": "lh:audit:max-potential-fid",
+        "duration": 1.25,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38338.38,
+        "name": "lh:audit:errors-in-console",
+        "duration": 1.45,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38340.5,
+        "name": "lh:audit:time-to-first-byte",
+        "duration": 1.01,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38342.05,
+        "name": "lh:audit:first-cpu-idle",
+        "duration": 2.34,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38344.83,
+        "name": "lh:audit:interactive",
+        "duration": 1.32,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38346.68,
+        "name": "lh:audit:user-timings",
+        "duration": 0.66,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38351.69,
+        "name": "lh:audit:critical-request-chains",
+        "duration": 0.94,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38354.17,
+        "name": "lh:audit:redirects",
+        "duration": 1.58,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38356.23,
+        "name": "lh:audit:installable-manifest",
+        "duration": 5.31,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38359.81,
+        "name": "lh:computed:ManifestValues",
+        "duration": 0.49,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38361.99,
+        "name": "lh:audit:apple-touch-icon",
+        "duration": 4.96,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38367.61,
+        "name": "lh:audit:splash-screen",
+        "duration": 1.11,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38369.65,
+        "name": "lh:audit:themed-omnibox",
+        "duration": 1.77,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38372.54,
+        "name": "lh:audit:content-width",
+        "duration": 1.15,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38375.22,
+        "name": "lh:audit:image-aspect-ratio",
+        "duration": 3.29,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38379.19,
+        "name": "lh:audit:deprecations",
+        "duration": 1.49,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38381.47,
+        "name": "lh:audit:mainthread-work-breakdown",
+        "duration": 1.05,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38383.19,
+        "name": "lh:audit:bootup-time",
+        "duration": 1.36,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38384.96,
+        "name": "lh:audit:uses-rel-preload",
+        "duration": 0.79,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38386.44,
+        "name": "lh:audit:uses-rel-preconnect",
+        "duration": 1.14,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38388.74,
+        "name": "lh:audit:font-display",
+        "duration": 0.88,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38389.68,
+        "name": "lh:audit:diagnostics",
+        "duration": 1.48,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38391.47,
+        "name": "lh:audit:network-requests",
+        "duration": 0.51,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38392.31,
+        "name": "lh:audit:network-rtt",
+        "duration": 0.75,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38393.48,
+        "name": "lh:audit:network-server-latency",
+        "duration": 1.68,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38395.22,
+        "name": "lh:audit:main-thread-tasks",
+        "duration": 0.77,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38396.04,
+        "name": "lh:audit:metrics",
+        "duration": 0.87,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38397.86,
+        "name": "lh:audit:offline-start-url",
+        "duration": 1.92,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38400.1,
+        "name": "lh:audit:performance-budget",
+        "duration": 2.46,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38402.99,
+        "name": "lh:audit:resource-summary",
+        "duration": 0.84,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38404.26,
+        "name": "lh:audit:third-party-summary",
+        "duration": 5.46,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38410.13,
+        "name": "lh:audit:pwa-cross-browser",
+        "duration": 0.68,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38411.58,
+        "name": "lh:audit:pwa-page-transitions",
+        "duration": 0.3,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38412.09,
+        "name": "lh:audit:pwa-each-page-has-url",
+        "duration": 0.57,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38413.24,
+        "name": "lh:audit:accesskeys",
+        "duration": 1.55,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38415.19,
+        "name": "lh:audit:aria-allowed-attr",
+        "duration": 4.26,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38419.86,
+        "name": "lh:audit:aria-required-attr",
+        "duration": 1.69,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38422.19,
+        "name": "lh:audit:aria-required-children",
+        "duration": 1.14,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38426.24,
+        "name": "lh:audit:aria-required-parent",
+        "duration": 1.58,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38428.69,
+        "name": "lh:audit:aria-roles",
+        "duration": 2.05,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38431.14,
+        "name": "lh:audit:aria-valid-attr-value",
+        "duration": 1.27,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38433.15,
+        "name": "lh:audit:aria-valid-attr",
+        "duration": 1.95,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38435.7,
+        "name": "lh:audit:audio-caption",
+        "duration": 1.87,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38437.92,
+        "name": "lh:audit:button-name",
+        "duration": 1.96,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38440.35,
+        "name": "lh:audit:bypass",
+        "duration": 1.34,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38442.53,
+        "name": "lh:audit:color-contrast",
+        "duration": 1.35,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38446.02,
+        "name": "lh:audit:definition-list",
+        "duration": 1.51,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38448.01,
+        "name": "lh:audit:dlitem",
+        "duration": 1.18,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38450,
+        "name": "lh:audit:document-title",
+        "duration": 1.07,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38451.59,
+        "name": "lh:audit:duplicate-id",
+        "duration": 1.27,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38453.71,
+        "name": "lh:audit:frame-title",
+        "duration": 1.28,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38456.18,
+        "name": "lh:audit:html-has-lang",
+        "duration": 1.06,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38457.95,
+        "name": "lh:audit:html-lang-valid",
+        "duration": 1.5,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38459.84,
+        "name": "lh:audit:image-alt",
+        "duration": 1.15,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38462.58,
+        "name": "lh:audit:input-image-alt",
+        "duration": 4.79,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38467.95,
+        "name": "lh:audit:label",
+        "duration": 1.63,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38470.24,
+        "name": "lh:audit:layout-table",
+        "duration": 2.92,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38475.53,
+        "name": "lh:audit:link-name",
+        "duration": 2.79,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38479.2,
+        "name": "lh:audit:list",
+        "duration": 3.36,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38483.19,
+        "name": "lh:audit:listitem",
+        "duration": 2.68,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38486.38,
+        "name": "lh:audit:meta-refresh",
+        "duration": 3.54,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38491.06,
+        "name": "lh:audit:meta-viewport",
+        "duration": 4.24,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38495.92,
+        "name": "lh:audit:object-alt",
+        "duration": 4.45,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38500.89,
+        "name": "lh:audit:tabindex",
+        "duration": 2.06,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38503.92,
+        "name": "lh:audit:td-headers-attr",
+        "duration": 3.09,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38508.03,
+        "name": "lh:audit:th-has-data-cells",
+        "duration": 2.53,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38510.98,
+        "name": "lh:audit:valid-lang",
+        "duration": 1.09,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38512.96,
+        "name": "lh:audit:video-caption",
+        "duration": 1.47,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38515,
+        "name": "lh:audit:video-description",
+        "duration": 1.45,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38516.56,
+        "name": "lh:audit:custom-controls-labels",
+        "duration": 0.23,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38516.85,
+        "name": "lh:audit:custom-controls-roles",
+        "duration": 0.37,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38517.38,
+        "name": "lh:audit:focus-traps",
+        "duration": 0.27,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38517.75,
+        "name": "lh:audit:focusable-controls",
+        "duration": 0.2,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38519.38,
+        "name": "lh:audit:heading-levels",
+        "duration": 0.24,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38519.66,
+        "name": "lh:audit:interactive-element-affordance",
+        "duration": 0.14,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38519.84,
+        "name": "lh:audit:logical-tab-order",
+        "duration": 0.14,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38520.01,
+        "name": "lh:audit:managed-focus",
+        "duration": 0.13,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38520.19,
+        "name": "lh:audit:offscreen-content-hidden",
+        "duration": 0.13,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38520.35,
+        "name": "lh:audit:use-landmarks",
+        "duration": 2.42,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38522.82,
+        "name": "lh:audit:visual-order-follows-dom",
+        "duration": 1.38,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38525.21,
+        "name": "lh:audit:uses-long-cache-ttl",
+        "duration": 1.31,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38534.41,
+        "name": "lh:audit:total-byte-weight",
+        "duration": 0.75,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38535.69,
+        "name": "lh:audit:offscreen-images",
+        "duration": 0.9,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38537.03,
+        "name": "lh:audit:render-blocking-resources",
+        "duration": 0.87,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38538.21,
+        "name": "lh:audit:unminified-css",
+        "duration": 5.09,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38543.75,
+        "name": "lh:audit:unminified-javascript",
+        "duration": 2.98,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38547.07,
+        "name": "lh:audit:unused-css-rules",
+        "duration": 5.23,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38552.92,
+        "name": "lh:audit:uses-webp-images",
+        "duration": 3.32,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38556.96,
+        "name": "lh:audit:uses-optimized-images",
+        "duration": 2.44,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38559.73,
+        "name": "lh:audit:uses-text-compression",
+        "duration": 1.66,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38563.24,
+        "name": "lh:audit:uses-responsive-images",
+        "duration": 3.36,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38566.9,
+        "name": "lh:audit:efficient-animated-content",
+        "duration": 2.66,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38569.92,
+        "name": "lh:audit:appcache-manifest",
+        "duration": 2.55,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38572.88,
+        "name": "lh:audit:doctype",
+        "duration": 2.9,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38576.18,
+        "name": "lh:audit:dom-size",
+        "duration": 3.58,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38580.19,
+        "name": "lh:audit:external-anchors-use-rel-noopener",
+        "duration": 3.95,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38584.74,
+        "name": "lh:audit:geolocation-on-start",
+        "duration": 1.91,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38587.03,
+        "name": "lh:audit:no-document-write",
+        "duration": 4.23,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38592.53,
+        "name": "lh:audit:no-vulnerable-libraries",
+        "duration": 3.51,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38596.55,
+        "name": "lh:audit:js-libraries",
+        "duration": 1.73,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38598.87,
+        "name": "lh:audit:notification-on-start",
+        "duration": 3.62,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38602.98,
+        "name": "lh:audit:password-inputs-can-be-pasted-into",
+        "duration": 6.31,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38609.73,
+        "name": "lh:audit:uses-http2",
+        "duration": 2.14,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38612.21,
+        "name": "lh:audit:uses-passive-event-listeners",
+        "duration": 1.37,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38614.8,
+        "name": "lh:audit:meta-description",
+        "duration": 1.91,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38617.34,
+        "name": "lh:audit:http-status-code",
+        "duration": 1.13,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38619.85,
+        "name": "lh:audit:font-size",
+        "duration": 1.37,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38621.75,
+        "name": "lh:audit:link-text",
+        "duration": 5.72,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38628.01,
+        "name": "lh:audit:is-crawlable",
+        "duration": 0.98,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38629.95,
+        "name": "lh:audit:robots-txt",
+        "duration": 1.28,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38632.18,
+        "name": "lh:audit:tap-targets",
+        "duration": 0.77,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38633.18,
+        "name": "lh:audit:hreflang",
+        "duration": 0.53,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38633.89,
+        "name": "lh:audit:plugins",
+        "duration": 0.69,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38634.81,
+        "name": "lh:audit:canonical",
+        "duration": 0.56,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38635.73,
+        "name": "lh:audit:structured-data",
+        "duration": 0.43,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 38636.66,
+        "name": "lh:runner:generate",
+        "duration": 10.8,
+        "entryType": "measure"
+      }
+    ],
+    "total": 31547.62
+  },
+  "i18n": {
+    "rendererFormattedStrings": {
+      "auditGroupExpandTooltip": "Show audits",
+      "crcInitialNavigation": "Initial Navigation",
+      "crcLongestDurationLabel": "Maximum critical path latency:",
+      "errorLabel": "Error!",
+      "errorMissingAuditInfo": "Report error: no audit information",
+      "labDataTitle": "Lab Data",
+      "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+      "manualAuditsGroupTitle": "Additional items to manually check",
+      "notApplicableAuditsGroupTitle": "Not applicable",
+      "opportunityResourceColumnLabel": "Opportunity",
+      "opportunitySavingsColumnLabel": "Estimated Savings",
+      "passedAuditsGroupTitle": "Passed audits",
+      "snippetCollapseButtonLabel": "Collapse snippet",
+      "snippetExpandButtonLabel": "Expand snippet",
+      "thirdPartyResourcesLabel": "Show 3rd-party resources",
+      "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+      "varianceDisclaimer": "Values are estimated and may vary. The performance score is [based only on these metrics](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted).",
+      "warningAuditsGroupTitle": "Passed audits but with warnings",
+      "warningHeader": "Warnings: "
+    },
+    "icuMessagePaths": {
+      "lighthouse-core/lib/lh-error.js | pageLoadFailedWithDetails": [
+        {
+          "values": {
+            "errorCode": "FAILED_DOCUMENT_REQUEST",
+            "errorDetails": "net::ERR_CERT_AUTHORITY_INVALID"
+          },
+          "path": "runWarnings[0]"
+        },
+        {
+          "values": {
+            "errorCode": "FAILED_DOCUMENT_REQUEST",
+            "errorDetails": "net::ERR_CERT_AUTHORITY_INVALID"
+          },
+          "path": "runtimeError.message"
+        }
+      ],
+      "lighthouse-core/audits/is-on-https.js | title": [
+        "audits[is-on-https].title"
+      ],
+      "lighthouse-core/audits/is-on-https.js | description": [
+        "audits[is-on-https].description"
+      ],
+      "lighthouse-core/lib/lh-error.js | missingRequiredArtifact": [
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[is-on-https].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "HTTPRedirect"
+          },
+          "path": "audits[redirects-http].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ServiceWorker"
+          },
+          "path": "audits[service-worker].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Offline"
+          },
+          "path": "audits[works-offline].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "MetaElements"
+          },
+          "path": "audits.viewport.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "HTMLWithoutJavaScript"
+          },
+          "path": "audits[without-javascript].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[first-contentful-paint].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[first-meaningful-paint].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[load-fast-enough-for-pwa].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[speed-index].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[screenshot-thumbnails].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[final-screenshot].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[estimated-input-latency].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[total-blocking-time].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[max-potential-fid].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ConsoleMessages"
+          },
+          "path": "audits[errors-in-console].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[time-to-first-byte].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[first-cpu-idle].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits.interactive.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[user-timings].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[critical-request-chains].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits.redirects.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "LinkElements"
+          },
+          "path": "audits[apple-touch-icon].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "MetaElements"
+          },
+          "path": "audits[themed-omnibox].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ViewportDimensions"
+          },
+          "path": "audits[content-width].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ImageElements"
+          },
+          "path": "audits[image-aspect-ratio].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ConsoleMessages"
+          },
+          "path": "audits.deprecations.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[mainthread-work-breakdown].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[bootup-time].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[uses-rel-preload].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[uses-rel-preconnect].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[font-display].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits.diagnostics.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[network-requests].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[network-rtt].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[network-server-latency].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[main-thread-tasks].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits.metrics.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "StartUrl"
+          },
+          "path": "audits[offline-start-url].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[performance-budget].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[resource-summary].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "traces"
+          },
+          "path": "audits[third-party-summary].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits.accesskeys.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[aria-allowed-attr].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[aria-required-attr].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[aria-required-children].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[aria-required-parent].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[aria-roles].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[aria-valid-attr-value].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[aria-valid-attr].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[audio-caption].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[button-name].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits.bypass.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[color-contrast].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[definition-list].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits.dlitem.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[document-title].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[duplicate-id].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[frame-title].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[html-has-lang].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[html-lang-valid].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[image-alt].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[input-image-alt].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits.label.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[layout-table].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[link-name].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits.list.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits.listitem.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[meta-refresh].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[meta-viewport].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[object-alt].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits.tabindex.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[td-headers-attr].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[th-has-data-cells].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[valid-lang].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[video-caption].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Accessibility"
+          },
+          "path": "audits[video-description].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[uses-long-cache-ttl].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[total-byte-weight].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ImageElements"
+          },
+          "path": "audits[offscreen-images].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "TagsBlockingFirstPaint"
+          },
+          "path": "audits[render-blocking-resources].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "CSSUsage"
+          },
+          "path": "audits[unminified-css].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ScriptElements"
+          },
+          "path": "audits[unminified-javascript].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "CSSUsage"
+          },
+          "path": "audits[unused-css-rules].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "OptimizedImages"
+          },
+          "path": "audits[uses-webp-images].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "OptimizedImages"
+          },
+          "path": "audits[uses-optimized-images].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ResponseCompression"
+          },
+          "path": "audits[uses-text-compression].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ImageElements"
+          },
+          "path": "audits[uses-responsive-images].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[efficient-animated-content].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "AppCacheManifest"
+          },
+          "path": "audits[appcache-manifest].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "Doctype"
+          },
+          "path": "audits.doctype.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "DOMStats"
+          },
+          "path": "audits[dom-size].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "AnchorElements"
+          },
+          "path": "audits[external-anchors-use-rel-noopener].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ConsoleMessages"
+          },
+          "path": "audits[geolocation-on-start].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ConsoleMessages"
+          },
+          "path": "audits[no-document-write].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ConsoleMessages"
+          },
+          "path": "audits[notification-on-start].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "PasswordInputsWithPreventedPaste"
+          },
+          "path": "audits[password-inputs-can-be-pasted-into].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[uses-http2].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "ConsoleMessages"
+          },
+          "path": "audits[uses-passive-event-listeners].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "MetaElements"
+          },
+          "path": "audits[meta-description].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "devtoolsLogs"
+          },
+          "path": "audits[http-status-code].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "FontSize"
+          },
+          "path": "audits[font-size].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "AnchorElements"
+          },
+          "path": "audits[link-text].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "MetaElements"
+          },
+          "path": "audits[is-crawlable].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "RobotsTxt"
+          },
+          "path": "audits[robots-txt].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "MetaElements"
+          },
+          "path": "audits[tap-targets].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "LinkElements"
+          },
+          "path": "audits.hreflang.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "EmbeddedContent"
+          },
+          "path": "audits.plugins.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "LinkElements"
+          },
+          "path": "audits.canonical.errorMessage"
+        }
+      ],
+      "lighthouse-core/audits/redirects-http.js | title": [
+        "audits[redirects-http].title"
+      ],
+      "lighthouse-core/audits/redirects-http.js | description": [
+        "audits[redirects-http].description"
+      ],
+      "lighthouse-core/audits/service-worker.js | title": [
+        "audits[service-worker].title"
+      ],
+      "lighthouse-core/audits/service-worker.js | description": [
+        "audits[service-worker].description"
+      ],
+      "lighthouse-core/audits/works-offline.js | title": [
+        "audits[works-offline].title"
+      ],
+      "lighthouse-core/audits/works-offline.js | description": [
+        "audits[works-offline].description"
+      ],
+      "lighthouse-core/audits/viewport.js | title": [
+        "audits.viewport.title"
+      ],
+      "lighthouse-core/audits/viewport.js | description": [
+        "audits.viewport.description"
+      ],
+      "lighthouse-core/audits/without-javascript.js | title": [
+        "audits[without-javascript].title"
+      ],
+      "lighthouse-core/audits/without-javascript.js | description": [
+        "audits[without-javascript].description"
+      ],
+      "lighthouse-core/audits/metrics/first-contentful-paint.js | title": [
+        "audits[first-contentful-paint].title"
+      ],
+      "lighthouse-core/audits/metrics/first-contentful-paint.js | description": [
+        "audits[first-contentful-paint].description"
+      ],
+      "lighthouse-core/audits/metrics/first-meaningful-paint.js | title": [
+        "audits[first-meaningful-paint].title"
+      ],
+      "lighthouse-core/audits/metrics/first-meaningful-paint.js | description": [
+        "audits[first-meaningful-paint].description"
+      ],
+      "lighthouse-core/audits/load-fast-enough-for-pwa.js | title": [
+        "audits[load-fast-enough-for-pwa].title"
+      ],
+      "lighthouse-core/audits/load-fast-enough-for-pwa.js | description": [
+        "audits[load-fast-enough-for-pwa].description"
+      ],
+      "lighthouse-core/audits/metrics/speed-index.js | title": [
+        "audits[speed-index].title"
+      ],
+      "lighthouse-core/audits/metrics/speed-index.js | description": [
+        "audits[speed-index].description"
+      ],
+      "lighthouse-core/audits/metrics/estimated-input-latency.js | title": [
+        "audits[estimated-input-latency].title"
+      ],
+      "lighthouse-core/audits/metrics/estimated-input-latency.js | description": [
+        "audits[estimated-input-latency].description"
+      ],
+      "lighthouse-core/audits/metrics/total-blocking-time.js | title": [
+        "audits[total-blocking-time].title"
+      ],
+      "lighthouse-core/audits/metrics/total-blocking-time.js | description": [
+        "audits[total-blocking-time].description"
+      ],
+      "lighthouse-core/audits/metrics/max-potential-fid.js | title": [
+        "audits[max-potential-fid].title"
+      ],
+      "lighthouse-core/audits/metrics/max-potential-fid.js | description": [
+        "audits[max-potential-fid].description"
+      ],
+      "lighthouse-core/audits/errors-in-console.js | title": [
+        "audits[errors-in-console].title"
+      ],
+      "lighthouse-core/audits/errors-in-console.js | description": [
+        "audits[errors-in-console].description"
+      ],
+      "lighthouse-core/audits/time-to-first-byte.js | title": [
+        "audits[time-to-first-byte].title"
+      ],
+      "lighthouse-core/audits/time-to-first-byte.js | description": [
+        "audits[time-to-first-byte].description"
+      ],
+      "lighthouse-core/audits/metrics/first-cpu-idle.js | title": [
+        "audits[first-cpu-idle].title"
+      ],
+      "lighthouse-core/audits/metrics/first-cpu-idle.js | description": [
+        "audits[first-cpu-idle].description"
+      ],
+      "lighthouse-core/audits/metrics/interactive.js | title": [
+        "audits.interactive.title"
+      ],
+      "lighthouse-core/audits/metrics/interactive.js | description": [
+        "audits.interactive.description"
+      ],
+      "lighthouse-core/audits/user-timings.js | title": [
+        "audits[user-timings].title"
+      ],
+      "lighthouse-core/audits/user-timings.js | description": [
+        "audits[user-timings].description"
+      ],
+      "lighthouse-core/audits/critical-request-chains.js | title": [
+        "audits[critical-request-chains].title"
+      ],
+      "lighthouse-core/audits/critical-request-chains.js | description": [
+        "audits[critical-request-chains].description"
+      ],
+      "lighthouse-core/audits/redirects.js | title": [
+        "audits.redirects.title"
+      ],
+      "lighthouse-core/audits/redirects.js | description": [
+        "audits.redirects.description"
+      ],
+      "lighthouse-core/audits/installable-manifest.js | failureTitle": [
+        "audits[installable-manifest].title"
+      ],
+      "lighthouse-core/audits/installable-manifest.js | description": [
+        "audits[installable-manifest].description"
+      ],
+      "lighthouse-core/audits/apple-touch-icon.js | title": [
+        "audits[apple-touch-icon].title"
+      ],
+      "lighthouse-core/audits/apple-touch-icon.js | description": [
+        "audits[apple-touch-icon].description"
+      ],
+      "lighthouse-core/audits/splash-screen.js | failureTitle": [
+        "audits[splash-screen].title"
+      ],
+      "lighthouse-core/audits/splash-screen.js | description": [
+        "audits[splash-screen].description"
+      ],
+      "lighthouse-core/audits/themed-omnibox.js | title": [
+        "audits[themed-omnibox].title"
+      ],
+      "lighthouse-core/audits/themed-omnibox.js | description": [
+        "audits[themed-omnibox].description"
+      ],
+      "lighthouse-core/audits/content-width.js | title": [
+        "audits[content-width].title"
+      ],
+      "lighthouse-core/audits/content-width.js | description": [
+        "audits[content-width].description"
+      ],
+      "lighthouse-core/audits/image-aspect-ratio.js | title": [
+        "audits[image-aspect-ratio].title"
+      ],
+      "lighthouse-core/audits/image-aspect-ratio.js | description": [
+        "audits[image-aspect-ratio].description"
+      ],
+      "lighthouse-core/audits/deprecations.js | title": [
+        "audits.deprecations.title"
+      ],
+      "lighthouse-core/audits/deprecations.js | description": [
+        "audits.deprecations.description"
+      ],
+      "lighthouse-core/audits/mainthread-work-breakdown.js | title": [
+        "audits[mainthread-work-breakdown].title"
+      ],
+      "lighthouse-core/audits/mainthread-work-breakdown.js | description": [
+        "audits[mainthread-work-breakdown].description"
+      ],
+      "lighthouse-core/audits/bootup-time.js | title": [
+        "audits[bootup-time].title"
+      ],
+      "lighthouse-core/audits/bootup-time.js | description": [
+        "audits[bootup-time].description"
+      ],
+      "lighthouse-core/audits/uses-rel-preload.js | title": [
+        "audits[uses-rel-preload].title"
+      ],
+      "lighthouse-core/audits/uses-rel-preload.js | description": [
+        "audits[uses-rel-preload].description"
+      ],
+      "lighthouse-core/audits/uses-rel-preconnect.js | title": [
+        "audits[uses-rel-preconnect].title"
+      ],
+      "lighthouse-core/audits/uses-rel-preconnect.js | description": [
+        "audits[uses-rel-preconnect].description"
+      ],
+      "lighthouse-core/audits/font-display.js | title": [
+        "audits[font-display].title"
+      ],
+      "lighthouse-core/audits/font-display.js | description": [
+        "audits[font-display].description"
+      ],
+      "lighthouse-core/audits/network-rtt.js | title": [
+        "audits[network-rtt].title"
+      ],
+      "lighthouse-core/audits/network-rtt.js | description": [
+        "audits[network-rtt].description"
+      ],
+      "lighthouse-core/audits/network-server-latency.js | title": [
+        "audits[network-server-latency].title"
+      ],
+      "lighthouse-core/audits/network-server-latency.js | description": [
+        "audits[network-server-latency].description"
+      ],
+      "lighthouse-core/audits/offline-start-url.js | title": [
+        "audits[offline-start-url].title"
+      ],
+      "lighthouse-core/audits/offline-start-url.js | description": [
+        "audits[offline-start-url].description"
+      ],
+      "lighthouse-core/audits/performance-budget.js | title": [
+        "audits[performance-budget].title"
+      ],
+      "lighthouse-core/audits/performance-budget.js | description": [
+        "audits[performance-budget].description"
+      ],
+      "lighthouse-core/audits/resource-summary.js | title": [
+        "audits[resource-summary].title"
+      ],
+      "lighthouse-core/audits/resource-summary.js | description": [
+        "audits[resource-summary].description"
+      ],
+      "lighthouse-core/audits/third-party-summary.js | title": [
+        "audits[third-party-summary].title"
+      ],
+      "lighthouse-core/audits/third-party-summary.js | description": [
+        "audits[third-party-summary].description"
+      ],
+      "lighthouse-core/audits/manual/pwa-cross-browser.js | title": [
+        "audits[pwa-cross-browser].title"
+      ],
+      "lighthouse-core/audits/manual/pwa-cross-browser.js | description": [
+        "audits[pwa-cross-browser].description"
+      ],
+      "lighthouse-core/audits/manual/pwa-page-transitions.js | title": [
+        "audits[pwa-page-transitions].title"
+      ],
+      "lighthouse-core/audits/manual/pwa-page-transitions.js | description": [
+        "audits[pwa-page-transitions].description"
+      ],
+      "lighthouse-core/audits/manual/pwa-each-page-has-url.js | title": [
+        "audits[pwa-each-page-has-url].title"
+      ],
+      "lighthouse-core/audits/manual/pwa-each-page-has-url.js | description": [
+        "audits[pwa-each-page-has-url].description"
+      ],
+      "lighthouse-core/audits/accessibility/accesskeys.js | title": [
+        "audits.accesskeys.title"
+      ],
+      "lighthouse-core/audits/accessibility/accesskeys.js | description": [
+        "audits.accesskeys.description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-allowed-attr.js | title": [
+        "audits[aria-allowed-attr].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-allowed-attr.js | description": [
+        "audits[aria-allowed-attr].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-attr.js | title": [
+        "audits[aria-required-attr].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-attr.js | description": [
+        "audits[aria-required-attr].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-children.js | title": [
+        "audits[aria-required-children].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-children.js | description": [
+        "audits[aria-required-children].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-parent.js | title": [
+        "audits[aria-required-parent].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-parent.js | description": [
+        "audits[aria-required-parent].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-roles.js | title": [
+        "audits[aria-roles].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-roles.js | description": [
+        "audits[aria-roles].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-valid-attr-value.js | title": [
+        "audits[aria-valid-attr-value].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-valid-attr-value.js | description": [
+        "audits[aria-valid-attr-value].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-valid-attr.js | title": [
+        "audits[aria-valid-attr].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-valid-attr.js | description": [
+        "audits[aria-valid-attr].description"
+      ],
+      "lighthouse-core/audits/accessibility/audio-caption.js | title": [
+        "audits[audio-caption].title"
+      ],
+      "lighthouse-core/audits/accessibility/audio-caption.js | description": [
+        "audits[audio-caption].description"
+      ],
+      "lighthouse-core/audits/accessibility/button-name.js | title": [
+        "audits[button-name].title"
+      ],
+      "lighthouse-core/audits/accessibility/button-name.js | description": [
+        "audits[button-name].description"
+      ],
+      "lighthouse-core/audits/accessibility/bypass.js | title": [
+        "audits.bypass.title"
+      ],
+      "lighthouse-core/audits/accessibility/bypass.js | description": [
+        "audits.bypass.description"
+      ],
+      "lighthouse-core/audits/accessibility/color-contrast.js | title": [
+        "audits[color-contrast].title"
+      ],
+      "lighthouse-core/audits/accessibility/color-contrast.js | description": [
+        "audits[color-contrast].description"
+      ],
+      "lighthouse-core/audits/accessibility/definition-list.js | title": [
+        "audits[definition-list].title"
+      ],
+      "lighthouse-core/audits/accessibility/definition-list.js | description": [
+        "audits[definition-list].description"
+      ],
+      "lighthouse-core/audits/accessibility/dlitem.js | title": [
+        "audits.dlitem.title"
+      ],
+      "lighthouse-core/audits/accessibility/dlitem.js | description": [
+        "audits.dlitem.description"
+      ],
+      "lighthouse-core/audits/accessibility/document-title.js | title": [
+        "audits[document-title].title"
+      ],
+      "lighthouse-core/audits/accessibility/document-title.js | description": [
+        "audits[document-title].description"
+      ],
+      "lighthouse-core/audits/accessibility/duplicate-id.js | title": [
+        "audits[duplicate-id].title"
+      ],
+      "lighthouse-core/audits/accessibility/duplicate-id.js | description": [
+        "audits[duplicate-id].description"
+      ],
+      "lighthouse-core/audits/accessibility/frame-title.js | title": [
+        "audits[frame-title].title"
+      ],
+      "lighthouse-core/audits/accessibility/frame-title.js | description": [
+        "audits[frame-title].description"
+      ],
+      "lighthouse-core/audits/accessibility/html-has-lang.js | title": [
+        "audits[html-has-lang].title"
+      ],
+      "lighthouse-core/audits/accessibility/html-has-lang.js | description": [
+        "audits[html-has-lang].description"
+      ],
+      "lighthouse-core/audits/accessibility/html-lang-valid.js | title": [
+        "audits[html-lang-valid].title"
+      ],
+      "lighthouse-core/audits/accessibility/html-lang-valid.js | description": [
+        "audits[html-lang-valid].description"
+      ],
+      "lighthouse-core/audits/accessibility/image-alt.js | title": [
+        "audits[image-alt].title"
+      ],
+      "lighthouse-core/audits/accessibility/image-alt.js | description": [
+        "audits[image-alt].description"
+      ],
+      "lighthouse-core/audits/accessibility/input-image-alt.js | title": [
+        "audits[input-image-alt].title"
+      ],
+      "lighthouse-core/audits/accessibility/input-image-alt.js | description": [
+        "audits[input-image-alt].description"
+      ],
+      "lighthouse-core/audits/accessibility/label.js | title": [
+        "audits.label.title"
+      ],
+      "lighthouse-core/audits/accessibility/label.js | description": [
+        "audits.label.description"
+      ],
+      "lighthouse-core/audits/accessibility/layout-table.js | title": [
+        "audits[layout-table].title"
+      ],
+      "lighthouse-core/audits/accessibility/layout-table.js | description": [
+        "audits[layout-table].description"
+      ],
+      "lighthouse-core/audits/accessibility/link-name.js | title": [
+        "audits[link-name].title"
+      ],
+      "lighthouse-core/audits/accessibility/link-name.js | description": [
+        "audits[link-name].description"
+      ],
+      "lighthouse-core/audits/accessibility/list.js | title": [
+        "audits.list.title"
+      ],
+      "lighthouse-core/audits/accessibility/list.js | description": [
+        "audits.list.description"
+      ],
+      "lighthouse-core/audits/accessibility/listitem.js | title": [
+        "audits.listitem.title"
+      ],
+      "lighthouse-core/audits/accessibility/listitem.js | description": [
+        "audits.listitem.description"
+      ],
+      "lighthouse-core/audits/accessibility/meta-refresh.js | title": [
+        "audits[meta-refresh].title"
+      ],
+      "lighthouse-core/audits/accessibility/meta-refresh.js | description": [
+        "audits[meta-refresh].description"
+      ],
+      "lighthouse-core/audits/accessibility/meta-viewport.js | title": [
+        "audits[meta-viewport].title"
+      ],
+      "lighthouse-core/audits/accessibility/meta-viewport.js | description": [
+        "audits[meta-viewport].description"
+      ],
+      "lighthouse-core/audits/accessibility/object-alt.js | title": [
+        "audits[object-alt].title"
+      ],
+      "lighthouse-core/audits/accessibility/object-alt.js | description": [
+        "audits[object-alt].description"
+      ],
+      "lighthouse-core/audits/accessibility/tabindex.js | title": [
+        "audits.tabindex.title"
+      ],
+      "lighthouse-core/audits/accessibility/tabindex.js | description": [
+        "audits.tabindex.description"
+      ],
+      "lighthouse-core/audits/accessibility/td-headers-attr.js | title": [
+        "audits[td-headers-attr].title"
+      ],
+      "lighthouse-core/audits/accessibility/td-headers-attr.js | description": [
+        "audits[td-headers-attr].description"
+      ],
+      "lighthouse-core/audits/accessibility/th-has-data-cells.js | title": [
+        "audits[th-has-data-cells].title"
+      ],
+      "lighthouse-core/audits/accessibility/th-has-data-cells.js | description": [
+        "audits[th-has-data-cells].description"
+      ],
+      "lighthouse-core/audits/accessibility/valid-lang.js | title": [
+        "audits[valid-lang].title"
+      ],
+      "lighthouse-core/audits/accessibility/valid-lang.js | description": [
+        "audits[valid-lang].description"
+      ],
+      "lighthouse-core/audits/accessibility/video-caption.js | title": [
+        "audits[video-caption].title"
+      ],
+      "lighthouse-core/audits/accessibility/video-caption.js | description": [
+        "audits[video-caption].description"
+      ],
+      "lighthouse-core/audits/accessibility/video-description.js | title": [
+        "audits[video-description].title"
+      ],
+      "lighthouse-core/audits/accessibility/video-description.js | description": [
+        "audits[video-description].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-long-cache-ttl.js | title": [
+        "audits[uses-long-cache-ttl].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-long-cache-ttl.js | description": [
+        "audits[uses-long-cache-ttl].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/total-byte-weight.js | title": [
+        "audits[total-byte-weight].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/total-byte-weight.js | description": [
+        "audits[total-byte-weight].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/offscreen-images.js | title": [
+        "audits[offscreen-images].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/offscreen-images.js | description": [
+        "audits[offscreen-images].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/render-blocking-resources.js | title": [
+        "audits[render-blocking-resources].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/render-blocking-resources.js | description": [
+        "audits[render-blocking-resources].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unminified-css.js | title": [
+        "audits[unminified-css].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unminified-css.js | description": [
+        "audits[unminified-css].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unminified-javascript.js | title": [
+        "audits[unminified-javascript].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unminified-javascript.js | description": [
+        "audits[unminified-javascript].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unused-css-rules.js | title": [
+        "audits[unused-css-rules].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unused-css-rules.js | description": [
+        "audits[unused-css-rules].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-webp-images.js | title": [
+        "audits[uses-webp-images].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-webp-images.js | description": [
+        "audits[uses-webp-images].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-optimized-images.js | title": [
+        "audits[uses-optimized-images].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-optimized-images.js | description": [
+        "audits[uses-optimized-images].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-text-compression.js | title": [
+        "audits[uses-text-compression].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-text-compression.js | description": [
+        "audits[uses-text-compression].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-responsive-images.js | title": [
+        "audits[uses-responsive-images].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-responsive-images.js | description": [
+        "audits[uses-responsive-images].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/efficient-animated-content.js | title": [
+        "audits[efficient-animated-content].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/efficient-animated-content.js | description": [
+        "audits[efficient-animated-content].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/appcache-manifest.js | title": [
+        "audits[appcache-manifest].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/appcache-manifest.js | description": [
+        "audits[appcache-manifest].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/doctype.js | title": [
+        "audits.doctype.title"
+      ],
+      "lighthouse-core/audits/dobetterweb/doctype.js | description": [
+        "audits.doctype.description"
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | title": [
+        "audits[dom-size].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | description": [
+        "audits[dom-size].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/external-anchors-use-rel-noopener.js | title": [
+        "audits[external-anchors-use-rel-noopener].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/external-anchors-use-rel-noopener.js | description": [
+        "audits[external-anchors-use-rel-noopener].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/geolocation-on-start.js | title": [
+        "audits[geolocation-on-start].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/geolocation-on-start.js | description": [
+        "audits[geolocation-on-start].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/no-document-write.js | title": [
+        "audits[no-document-write].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/no-document-write.js | description": [
+        "audits[no-document-write].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/no-vulnerable-libraries.js | title": [
+        "audits[no-vulnerable-libraries].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/no-vulnerable-libraries.js | description": [
+        "audits[no-vulnerable-libraries].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/js-libraries.js | title": [
+        "audits[js-libraries].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/js-libraries.js | description": [
+        "audits[js-libraries].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/notification-on-start.js | title": [
+        "audits[notification-on-start].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/notification-on-start.js | description": [
+        "audits[notification-on-start].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/password-inputs-can-be-pasted-into.js | title": [
+        "audits[password-inputs-can-be-pasted-into].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/password-inputs-can-be-pasted-into.js | description": [
+        "audits[password-inputs-can-be-pasted-into].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/uses-http2.js | title": [
+        "audits[uses-http2].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/uses-http2.js | description": [
+        "audits[uses-http2].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/uses-passive-event-listeners.js | title": [
+        "audits[uses-passive-event-listeners].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/uses-passive-event-listeners.js | description": [
+        "audits[uses-passive-event-listeners].description"
+      ],
+      "lighthouse-core/audits/seo/meta-description.js | title": [
+        "audits[meta-description].title"
+      ],
+      "lighthouse-core/audits/seo/meta-description.js | description": [
+        "audits[meta-description].description"
+      ],
+      "lighthouse-core/audits/seo/http-status-code.js | title": [
+        "audits[http-status-code].title"
+      ],
+      "lighthouse-core/audits/seo/http-status-code.js | description": [
+        "audits[http-status-code].description"
+      ],
+      "lighthouse-core/audits/seo/font-size.js | title": [
+        "audits[font-size].title"
+      ],
+      "lighthouse-core/audits/seo/font-size.js | description": [
+        "audits[font-size].description"
+      ],
+      "lighthouse-core/audits/seo/link-text.js | title": [
+        "audits[link-text].title"
+      ],
+      "lighthouse-core/audits/seo/link-text.js | description": [
+        "audits[link-text].description"
+      ],
+      "lighthouse-core/audits/seo/is-crawlable.js | title": [
+        "audits[is-crawlable].title"
+      ],
+      "lighthouse-core/audits/seo/is-crawlable.js | description": [
+        "audits[is-crawlable].description"
+      ],
+      "lighthouse-core/audits/seo/robots-txt.js | title": [
+        "audits[robots-txt].title"
+      ],
+      "lighthouse-core/audits/seo/robots-txt.js | description": [
+        "audits[robots-txt].description"
+      ],
+      "lighthouse-core/audits/seo/tap-targets.js | title": [
+        "audits[tap-targets].title"
+      ],
+      "lighthouse-core/audits/seo/tap-targets.js | description": [
+        "audits[tap-targets].description"
+      ],
+      "lighthouse-core/audits/seo/hreflang.js | title": [
+        "audits.hreflang.title"
+      ],
+      "lighthouse-core/audits/seo/hreflang.js | description": [
+        "audits.hreflang.description"
+      ],
+      "lighthouse-core/audits/seo/plugins.js | title": [
+        "audits.plugins.title"
+      ],
+      "lighthouse-core/audits/seo/plugins.js | description": [
+        "audits.plugins.description"
+      ],
+      "lighthouse-core/audits/seo/canonical.js | title": [
+        "audits.canonical.title"
+      ],
+      "lighthouse-core/audits/seo/canonical.js | description": [
+        "audits.canonical.description"
+      ],
+      "lighthouse-core/audits/seo/manual/structured-data.js | title": [
+        "audits[structured-data].title"
+      ],
+      "lighthouse-core/audits/seo/manual/structured-data.js | description": [
+        "audits[structured-data].description"
+      ],
+      "lighthouse-core/config/default-config.js | performanceCategoryTitle": [
+        "categories.performance.title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yCategoryTitle": [
+        "categories.accessibility.title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yCategoryDescription": [
+        "categories.accessibility.description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yCategoryManualDescription": [
+        "categories.accessibility.manualDescription"
+      ],
+      "lighthouse-core/config/default-config.js | bestPracticesCategoryTitle": [
+        "categories[best-practices].title"
+      ],
+      "lighthouse-core/config/default-config.js | seoCategoryTitle": [
+        "categories.seo.title"
+      ],
+      "lighthouse-core/config/default-config.js | seoCategoryDescription": [
+        "categories.seo.description"
+      ],
+      "lighthouse-core/config/default-config.js | seoCategoryManualDescription": [
+        "categories.seo.manualDescription"
+      ],
+      "lighthouse-core/config/default-config.js | pwaCategoryTitle": [
+        "categories.pwa.title"
+      ],
+      "lighthouse-core/config/default-config.js | pwaCategoryDescription": [
+        "categories.pwa.description"
+      ],
+      "lighthouse-core/config/default-config.js | pwaCategoryManualDescription": [
+        "categories.pwa.manualDescription"
+      ],
+      "lighthouse-core/config/default-config.js | metricGroupTitle": [
+        "categoryGroups.metrics.title"
+      ],
+      "lighthouse-core/config/default-config.js | loadOpportunitiesGroupTitle": [
+        "categoryGroups[load-opportunities].title"
+      ],
+      "lighthouse-core/config/default-config.js | loadOpportunitiesGroupDescription": [
+        "categoryGroups[load-opportunities].description"
+      ],
+      "lighthouse-core/config/default-config.js | budgetsGroupTitle": [
+        "categoryGroups.budgets.title"
+      ],
+      "lighthouse-core/config/default-config.js | budgetsGroupDescription": [
+        "categoryGroups.budgets.description"
+      ],
+      "lighthouse-core/config/default-config.js | diagnosticsGroupTitle": [
+        "categoryGroups.diagnostics.title"
+      ],
+      "lighthouse-core/config/default-config.js | diagnosticsGroupDescription": [
+        "categoryGroups.diagnostics.description"
+      ],
+      "lighthouse-core/config/default-config.js | pwaFastReliableGroupTitle": [
+        "categoryGroups[pwa-fast-reliable].title"
+      ],
+      "lighthouse-core/config/default-config.js | pwaInstallableGroupTitle": [
+        "categoryGroups[pwa-installable].title"
+      ],
+      "lighthouse-core/config/default-config.js | pwaOptimizedGroupTitle": [
+        "categoryGroups[pwa-optimized].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yBestPracticesGroupTitle": [
+        "categoryGroups[a11y-best-practices].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yBestPracticesGroupDescription": [
+        "categoryGroups[a11y-best-practices].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yColorContrastGroupTitle": [
+        "categoryGroups[a11y-color-contrast].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yColorContrastGroupDescription": [
+        "categoryGroups[a11y-color-contrast].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yNamesLabelsGroupTitle": [
+        "categoryGroups[a11y-names-labels].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yNamesLabelsGroupDescription": [
+        "categoryGroups[a11y-names-labels].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yNavigationGroupTitle": [
+        "categoryGroups[a11y-navigation].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yNavigationGroupDescription": [
+        "categoryGroups[a11y-navigation].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yAriaGroupTitle": [
+        "categoryGroups[a11y-aria].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yAriaGroupDescription": [
+        "categoryGroups[a11y-aria].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yLanguageGroupTitle": [
+        "categoryGroups[a11y-language].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yLanguageGroupDescription": [
+        "categoryGroups[a11y-language].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yAudioVideoGroupTitle": [
+        "categoryGroups[a11y-audio-video].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yAudioVideoGroupDescription": [
+        "categoryGroups[a11y-audio-video].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yTablesListsVideoGroupTitle": [
+        "categoryGroups[a11y-tables-lists].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yTablesListsVideoGroupDescription": [
+        "categoryGroups[a11y-tables-lists].description"
+      ],
+      "lighthouse-core/config/default-config.js | seoMobileGroupTitle": [
+        "categoryGroups[seo-mobile].title"
+      ],
+      "lighthouse-core/config/default-config.js | seoMobileGroupDescription": [
+        "categoryGroups[seo-mobile].description"
+      ],
+      "lighthouse-core/config/default-config.js | seoContentGroupTitle": [
+        "categoryGroups[seo-content].title"
+      ],
+      "lighthouse-core/config/default-config.js | seoContentGroupDescription": [
+        "categoryGroups[seo-content].description"
+      ],
+      "lighthouse-core/config/default-config.js | seoCrawlingGroupTitle": [
+        "categoryGroups[seo-crawl].title"
+      ],
+      "lighthouse-core/config/default-config.js | seoCrawlingGroupDescription": [
+        "categoryGroups[seo-crawl].description"
+      ]
+    }
+  },
+  "stackPacks": []
+}
